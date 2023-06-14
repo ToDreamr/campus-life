@@ -6,6 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import java.io.Serializable;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
@@ -15,20 +16,21 @@ import org.hibernate.validator.constraints.Length;
 * @TableName user
 */
 @ToString
+@ApiModel(value = "用户",description = " ")
 public class RainyUser implements Serializable {
 
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("编号")
     private Integer id;
     /**
     * 
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 255,message="编码长度不能超过255")
-    @ApiModelProperty("")
+    @ApiModelProperty("用户名")
     @Length(max= 255,message="编码长度不能超过255")
     private String username;
     /**
@@ -36,20 +38,20 @@ public class RainyUser implements Serializable {
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 255,message="编码长度不能超过255")
-    @ApiModelProperty("")
+    @ApiModelProperty("密码")
     @Length(max= 255,message="编码长度不能超过255")
     private String password;
     /**
     * 
     */
     @Size(max= 255,message="编码长度不能超过255")
-    @ApiModelProperty("")
+    @ApiModelProperty("昵称")
     @Length(max= 255,message="编码长度不能超过255")
     private String nickName;
     /**
     * 
     */
-    @ApiModelProperty("")
+    @ApiModelProperty("角色")
     private Integer userRole;
 
     /**

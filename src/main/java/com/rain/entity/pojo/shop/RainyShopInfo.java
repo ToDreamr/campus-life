@@ -7,6 +7,8 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 import java.util.Date;
+
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
@@ -16,47 +18,48 @@ import org.hibernate.validator.constraints.Length;
 * @TableName rainy_shop_info
 */
 @ToString
+@ApiModel(value = "店家信息",description = " ")
 public class RainyShopInfo implements Serializable {
 
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("词条信息id")
     private Integer id;
     /**
     * 
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 255,message="编码长度不能超过255")
-    @ApiModelProperty("")
+    @ApiModelProperty("店家名称")
     @Length(max= 255,message="编码长度不能超过255")
     private String shopName;
     /**
     * 
     */
-    @ApiModelProperty("")
+    @ApiModelProperty("排名")
     private Integer shopRank;
     /**
     * 
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 10,message="编码长度不能超过10")
-    @ApiModelProperty("")
+    @ApiModelProperty("店家类别")
     @Length(max= 10,message="编码长度不能超过10")
     private String shopType;
     /**
     * 
     */
     @Size(max= 255,message="编码长度不能超过255")
-    @ApiModelProperty("")
+    @ApiModelProperty("店家图片")
     @Length(max= 255,message="编码长度不能超过255")
     private String shopImg;
     /**
     * 
     */
     @Size(max= 255,message="编码长度不能超过255")
-    @ApiModelProperty("")
+    @ApiModelProperty("地址信息")
     @Length(max= 255,message="编码长度不能超过255")
     private String shopAddress;
     /**
@@ -64,14 +67,14 @@ public class RainyShopInfo implements Serializable {
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 11,message="编码长度不能超过11")
-    @ApiModelProperty("")
+    @ApiModelProperty("电话")
     @Length(max= 11,message="编码长度不能超过11")
     private String shopPhone;
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("上市时间")
     private Date updateTime;
 
     /**

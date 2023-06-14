@@ -6,6 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import java.io.Serializable;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
@@ -15,33 +16,34 @@ import org.hibernate.validator.constraints.Length;
 * @TableName rainy_user_history_orders
 */
 @ToString
+@ApiModel(value = "用户历史订单",description = "")
 public class RainyUserHistoryOrders implements Serializable {
 
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("历史订单号")
     private Integer id;
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("用户id")
     private Integer userId;
     /**
     * 
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 255,message="编码长度不能超过255")
-    @ApiModelProperty("")
+    @ApiModelProperty("商品名")
     @Length(max= 255,message="编码长度不能超过255")
     private String goodsName;
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("总价")
     private Double allMoney;
 
     /**

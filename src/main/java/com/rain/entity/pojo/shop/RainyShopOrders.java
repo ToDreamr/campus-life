@@ -7,6 +7,8 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 import java.util.Date;
+
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
@@ -16,26 +18,27 @@ import org.hibernate.validator.constraints.Length;
 * @TableName rainy_shop_orders
 */
 @ToString
+@ApiModel(value = "订单实体",description = " ")
 public class RainyShopOrders implements Serializable {
 
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("id")
     private Integer id;
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("下单时间")
     private Date orderTime;
     /**
     * 
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 20,message="编码长度不能超过20")
-    @ApiModelProperty("")
+    @ApiModelProperty("送单地址信息")
     @Length(max= 20,message="编码长度不能超过20")
     private String userAddress;
     /**
@@ -43,27 +46,27 @@ public class RainyShopOrders implements Serializable {
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 11,message="编码长度不能超过11")
-    @ApiModelProperty("")
+    @ApiModelProperty("下单手机号")
     @Length(max= 11,message="编码长度不能超过11")
     private String userPhone;
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("总价")
     private Double allMoney;
     /**
     * 
     */
     @NotNull(message="[]不能为空")
-    @ApiModelProperty("")
+    @ApiModelProperty("买家编号")
     private Integer userId;
     /**
     * 
     */
     @NotBlank(message="[]不能为空")
     @Size(max= 255,message="编码长度不能超过255")
-    @ApiModelProperty("")
+    @ApiModelProperty("货名")
     @Length(max= 255,message="编码长度不能超过255")
     private String goodsName;
 
