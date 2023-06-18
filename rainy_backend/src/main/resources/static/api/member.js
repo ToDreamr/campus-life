@@ -40,3 +40,11 @@ function queryEmployeeById (id) {
     method: 'get'
   })
 }
+
+function Query(params) {
+  return $axios({
+    url: `/shop/employee/key`,
+    method: 'get',
+    params
+  })
+}

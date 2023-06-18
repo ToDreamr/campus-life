@@ -86,13 +86,14 @@
         </el-table-column>
       </el-table>
       <el-pagination
-        class="pageList"
-        :page-sizes="[10, 20, 30, 40]"
-        :page-size="pageSize"
-        layout="total, sizes, prev, pager, next, jumper"
-        :total="counts"
-        @size-change="handleSizeChange"
-        @current-change="handleCurrentChange"
+              class="pageList"
+              :page-sizes="[5,10]"
+              :page-size="pageSize"
+              layout="total, sizes, prev, pager, next, jumper"
+              :total="counts"
+              :current-page.sync="page"
+              @size-change="handleSizeChange"
+              @current-change="handleCurrentChange"
       ></el-pagination>
     </div>
     <el-dialog
@@ -105,18 +106,18 @@
         class="demo-form-inline"
         label-width="100px"
       >
-        <el-form-item label="分类名称：">
-          <el-input
-            v-model="classData.shopType"
-            placeholder="请输入分类名称"
-            maxlength="14"
-          />
+        <el-form-item label="ID">
+          <el-input v-model="classData.id"  type="number" placeholder="ID" />
         </el-form-item>
         <el-form-item label="排序：">
           <el-input v-model="classData.sort"  type="number" placeholder="请输入排序" />
         </el-form-item>
-        <el-form-item label="ID">
-          <el-input v-model="classData.id"  type="number" placeholder="ID" />
+        <el-form-item label="分类名称：">
+          <el-input
+                  v-model="classData.shopType"
+                  placeholder="请输入分类名称"
+                  maxlength="14"
+          />
         </el-form-item>
         <el-form-item label="当前时间：">
           <el-input v-model="classData.modifyTime"  type="date" placeholder="当前时间" />
@@ -180,18 +181,24 @@
         computed: {},
         created() {
           this.init()
+          this.user = JSON.parse(localStorage.getItem('userInfo')).username
         },
         mounted() {
         },
         methods: {
           async init () {
-            await getCategoryPage({'page': this.page, 'pageSize': this.pageSize}).then(res => {
+            const params = {
+              page: this.page,
+              pageSize: this.pageSize,
+              name: this.input ? this.input : undefined
+            }
+            await getClassifyPage(params).then(res => {
               if (String(res.code) === '200') {
-                this.tableData = res.data.records
+                this.tableData = res.data.records||[]
                 this.counts = Number(res.data.total)
               } else {
                 //返回消息不能为空
-                this.$message.error(res.msg || '操作失败')
+                this.$message.error(res.message || '操作失败')
               }
             }).catch(err => {
               this.$message.error('请求出错了：' + err)

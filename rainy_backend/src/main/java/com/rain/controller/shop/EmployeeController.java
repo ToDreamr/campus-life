@@ -54,4 +54,10 @@ public class EmployeeController {
         Page<RainyShopEmployee> pageInfo=new Page<>(page,pageSize);
         return Result.success(employeeService.page(pageInfo,queryWrapper));
     }
+
+    @GetMapping("/key")
+    public Result<List<RainyShopEmployee>> queryByKeyWords(@RequestParam String keyWords){
+        System.out.println(keyWords);
+        return Result.success("查询成功",employeeService.queryByName(keyWords));
+    }
 }

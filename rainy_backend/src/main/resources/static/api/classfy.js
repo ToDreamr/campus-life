@@ -1,5 +1,5 @@
 // 查询列表接口
-const getCategoryPage = (params) => {
+const getClassifyPage = (params) => {
   return $axios({
     url: '/shop/classify/page',
     method: 'get',

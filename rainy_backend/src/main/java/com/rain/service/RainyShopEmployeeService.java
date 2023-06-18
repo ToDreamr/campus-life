@@ -4,6 +4,7 @@ package com.rain.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.rain.entity.common.Result;
 import com.rain.entity.pojo.shop.RainyShopEmployee;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -20,4 +21,5 @@ public interface RainyShopEmployeeService extends IService<RainyShopEmployee> {
     Result<RainyShopEmployee> modifyEmployee( RainyShopEmployee rainyShopEmployee);
     Result<List<RainyShopEmployee>> deleteEmployee( int id);
     RainyShopEmployee getById(int id);
+    List<RainyShopEmployee> queryByName(String keyWords);
 }

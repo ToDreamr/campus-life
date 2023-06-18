@@ -6,6 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -56,6 +57,7 @@ public class RainyShopEmployee implements Serializable {
     */
     @NotNull(message="[]不能为空")
     @ApiModelProperty("是否在职")
+    @TableField(value = "0")
     private Integer isdroped;
     /**
     * 
@@ -193,5 +195,7 @@ public class RainyShopEmployee implements Serializable {
     public String getGender(){
     return this.gender;
     }
+
+
 
 }

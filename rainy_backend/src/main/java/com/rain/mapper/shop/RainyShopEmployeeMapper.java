@@ -2,7 +2,10 @@ package com.rain.mapper.shop;
 
 import com.rain.entity.pojo.shop.RainyShopEmployee;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
 * @author Rainy-Heights
@@ -12,7 +15,8 @@ import org.springframework.stereotype.Repository;
 */
 @Repository
 public interface RainyShopEmployeeMapper extends BaseMapper<RainyShopEmployee> {
-
+    @Select("select * from school_life.rainy_shop_employee where employee_name like #{keywords}")
+    List<RainyShopEmployee> queryByName(String keyWords);
 }
 
 

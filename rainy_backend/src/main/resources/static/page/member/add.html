@@ -24,15 +24,8 @@
         <el-form-item label="账号:" prop="username">
           <el-input v-model="ruleForm.username" placeholder="请输入账号" maxlength="20" />
         </el-form-item>
-        <el-form-item
-          label="员工姓名:"
-          prop="name"
-        >
-          <el-input
-            v-model="ruleForm.employeeName"
-            placeholder="请输入员工姓名"
-            maxlength="20"
-          />
+        <el-form-item label="员工姓名:" prop="employeeName">
+          <el-input v-model="ruleForm.employeeName" placeholder="请输入员工姓名" maxlength="20"/>
         </el-form-item>
 
         <el-form-item
@@ -45,18 +38,39 @@
             maxlength="20"
           />
         </el-form-item>
+
+        <el-form-item
+                label="密码:"
+                prop="password"
+        >
+          <el-input
+                  v-model="ruleForm.password"
+                  placeholder="请输入密码"
+                  maxlength="10"
+          />
+        </el-form-item>
+
         <el-form-item
           label="性别:"
-          prop="sex"
+          prop="gender"
         >
-          <el-radio-group v-model="ruleForm.sex">
+          <el-radio-group v-model="ruleForm.gender">
             <el-radio label="男"></el-radio>
             <el-radio label="女"></el-radio>
           </el-radio-group>
         </el-form-item>
         <el-form-item
+                label="状态:"
+                prop="isdroped"
+        >
+          <el-radio-group v-model="ruleForm.isdroped">
+            <el-radio label="0">上线</el-radio>
+            <el-radio label="1">下线</el-radio>
+          </el-radio-group>
+        </el-form-item>
+        <el-form-item
           label="身份证号:"
-          prop="idNumber"
+          prop="idNumder"
         >
           <el-input
             v-model="ruleForm.idNumber"
@@ -69,9 +83,7 @@
             <el-button  @click="goBack()">
               取消
             </el-button>
-            <el-button
-              type="primary"
-              @click="submitForm('ruleForm', false)"
+            <el-button v-if="actionType == 'add'" type="primary" @click="submitForm('ruleForm', false)"
             >
               保存
             </el-button>
@@ -108,9 +120,12 @@
             ruleForm : {
                 employeeName: '',
                 phone: '',
-                sex: '男',
-                id: '',
-                username: ''
+                gender: '男',
+                idNumber: '',
+                username: '',
+                password: '',
+                isdroped: '',
+                sex:'',
             }
           }
         },
@@ -159,10 +174,10 @@
                 if (this.actionType === 'add') {
                   const params = {
                     ...this.ruleForm,
-                    sex: this.ruleForm.sex === '女' ? '0' : '1'
+                    gender: this.ruleForm.gender === '女' ? '女' : '男'
                   }
                   addEmployee(params).then(res => {
-                    if (res.code === 1) {
+                    if (res.code === 200) {
                       this.$message.success('员工添加成功！')
                       if (!st) {
                         this.goBack()
@@ -171,10 +186,12 @@
                           username: '',
                           employeeName: '',
                           phone: '',
-                          // 'password': '',
+                          password: '22',
                           // 'rePassword': '',/
-                          sex: '男',
-                          id: ''
+                          gender: '男',
+                          id :this.idNumber,
+                          isdroped:0,
+                          email:"aaa@163.com",
                         }
                       }
                     } else {
@@ -186,7 +203,7 @@
                 } else {
                   const params = {
                     ...this.ruleForm,
-                    sex: this.ruleForm.sex === '女' ? '0' : '1'
+                    sex: this.ruleForm.sex === '女' ? '女' : '男'
                   }
                   editEmployee(params).then(res => {
                     if (res.code === 1) {

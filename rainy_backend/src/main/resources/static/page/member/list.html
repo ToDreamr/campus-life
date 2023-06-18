@@ -21,9 +21,9 @@
     <div class="container">
       <div class="tableBar">
         <el-input
-          v-model="input"
+          v-model="keyWords"
           placeholder="请输入员工姓名"
-          style="width: 250px"
+          style="width: 400px"
           clearable
            @keyup.enter.native="handleQuery"
         >
@@ -100,7 +100,7 @@
       </el-table>
       <el-pagination
         class="pageList"
-        :page-sizes="[5]"
+        :page-sizes="[5,10]"
         :page-size="pageSize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="counts"
@@ -133,6 +133,7 @@
              gender:'',
              email:'',
              isdroped : '',
+            keyWords:''
           }
         },
         computed: {},
@@ -159,8 +160,23 @@
             })
           },
           handleQuery() {
+            //定义传递参数
+            const params = {
+              keyWords: this.keyWords
+            }
+            if (params.keyWords===''){
+                 this.init()
+            }
+            Query(params).then(res=>{
+              if (String(res.code) === '200') {
+                this.tableData = res.data || []
+                this.counts = res.data.total
+              }
+            }).catch(err => {
+              this.$message.error('请求出错了：' + err)
+            })
             this.page = 1;
-            this.init();
+            // this.init();
           },
            // 添加
           addMemberHandle (st) {

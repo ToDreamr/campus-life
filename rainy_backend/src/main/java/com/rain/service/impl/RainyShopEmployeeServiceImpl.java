@@ -1,14 +1,17 @@
 package com.rain.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.AbstractWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.rain.entity.common.Result;
 import com.rain.entity.pojo.shop.RainyShopEmployee;
 import com.rain.mapper.shop.RainyShopEmployeeMapper;
 import com.rain.service.RainyShopEmployeeService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -100,6 +103,11 @@ public class RainyShopEmployeeServiceImpl extends ServiceImpl<RainyShopEmployeeM
     @Override
     public RainyShopEmployee getById(int id) {
         return employeeMapper.selectById(id);
+    }
+
+    @Override
+    public List<RainyShopEmployee> queryByName(String keyWords) {
+        return employeeMapper.queryByName(keyWords);
     }
 
 }

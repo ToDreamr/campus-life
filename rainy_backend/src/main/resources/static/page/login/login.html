@@ -110,15 +110,20 @@
       },
       methods: {
         async handleLogin() {
+          const params = {
+            id: this.loginForm.id,
+            username: this.loginForm.username,
+            password: this.loginForm.password
+          }
           this.$refs.loginForm.validate(async (valid) => {
             if (valid) {
               this.loading = true
-              let res = await loginApi(this.loginForm)
-              if (String(res.code) === '1') {
+              let res = await loginApi(params)
+              if (String(res.code) === '200') {
                 localStorage.setItem('userInfo',JSON.stringify(res.data))//登录成功会存储数据到浏览器
-                window.location.href= '/backend/index.html'
+                window.location.href= '/index.html'
               } else {
-                this.$message.error(res.msg)
+                this.$message.error(res.message)
                 this.loading = false
               }
             }
