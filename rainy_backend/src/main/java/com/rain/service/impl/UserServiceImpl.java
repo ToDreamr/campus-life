@@ -9,6 +9,7 @@ import com.rain.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author Rainy-Heights
@@ -24,8 +25,9 @@ public class UserServiceImpl extends ServiceImpl<RainyUserMapper, RainyUser> imp
         LambdaQueryWrapper<RainyUser> lambdaQueryWrapper = new LambdaQueryWrapper<RainyUser>();
         lambdaQueryWrapper.eq(RainyUser::getPassword,password).eq(RainyUser::getUsername,username);
         //等值查询，条件是用户名和密码
-        if (userMapper.selectList(lambdaQueryWrapper)!=null){
-            return userMapper.selectById(id);
+        List<RainyUser> users = userMapper.selectList(lambdaQueryWrapper);
+        if (users!=null){
+            return users.get(0);
         }
         throw new BaseException("输入参数有误或不存在该用户");
     }

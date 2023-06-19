@@ -183,9 +183,17 @@
         methods: {
           logout() {
             logoutApi().then((res)=>{
-              if(res.code === 1){
-                localStorage.removeItem('userInfo')
-                window.location.href = '/backend/page/login/login.html'
+              try {
+                if(res.code === 200) {
+                  //提示登出信息this.$message.erro
+                  this.$message.success(res.message || '操作失败')
+                  localStorage.removeItem('userInfo')
+                  window.location.href = '/page/login/login.html'
+                }else {
+                  this.$message.err("登出失败")
+                }
+              }catch (e) {
+                this.$message.err("登出去失败，请重试")
               }
             })
           },

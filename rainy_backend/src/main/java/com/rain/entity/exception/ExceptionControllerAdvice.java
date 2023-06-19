@@ -27,4 +27,10 @@ public class ExceptionControllerAdvice {
         log.error(exception.getMessage());
         return Result.error("参数不合法，返回数据为空",null);
     }
+
+    @ExceptionHandler(RuntimeException.class)
+    public Result<String> validateHandler(RuntimeException exception){
+        log.error(exception.getMessage());
+        return Result.error(exception.getMessage(), null);
+    }
 }

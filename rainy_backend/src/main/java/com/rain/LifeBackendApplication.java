@@ -25,6 +25,6 @@ public class LifeBackendApplication {
         CurrentUser.setCurrentId(Math.abs(UUID.randomUUID().getLeastSignificantBits()%20000));
         //随机根据当前时间戳生成线程ID
         log.info("本地随机生成线程ID:{}",CurrentUser.getCurrentId());
-        log.info("http://localhost:"+context.getEnvironment().getProperty("server.port")+"/index.html");
+        log.info("http://localhost:"+context.getEnvironment().getProperty("server.port")+"/page/login/login.html");
     }
 }

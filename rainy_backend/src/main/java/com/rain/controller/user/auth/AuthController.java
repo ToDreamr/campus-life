@@ -28,6 +28,16 @@ public class AuthController {
         * 1:前期采用数据库登录验证，比对数据完成之后放行页面
         * 2:添加cookie和Session
         * 3：后期添加校验码等功能*/
-        return Result.success(userService.login(rainyUser.getUsername(), rainyUser.getPassword(), rainyUser.getId()));
+        RainyUser user = userService.login(rainyUser.getUsername(), rainyUser.getPassword(), rainyUser.getId());
+        if (user!=null){
+            return Result.success("登录成功",user);
+        }
+        throw new RuntimeException("登录失败");
+    }
+
+    @PostMapping("/logout")
+    public Result<String> logout(){
+        //清除session，cokkie等信息
+        return Result.success("退出成功");
     }
 }
