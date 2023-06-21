@@ -16,7 +16,7 @@
       <div class="tableBar">
         <el-input
           v-model="input"
-          placeholder="请输入菜品名称"
+          placeholder="请输入商品名称"
           style="width: 250px"
           clearable
           @keyup.enter.native="handleQuery"
@@ -36,7 +36,7 @@
             type="primary"
             @click="addFoodtype('add')"
           >
-            + 新建菜品
+            + 添加美食
           </el-button>
         </div>
       </div>
@@ -52,7 +52,7 @@
         ></el-table-column>
         <el-table-column
           prop="name"
-          label="菜品名称"
+          label="美食名"
         ></el-table-column>
         <el-table-column prop="image" label="图片" align="center">
           <template slot-scope="{ row }">
@@ -60,14 +60,14 @@
             :src="getImage(row.image)" 
             :preview-src-list="[ `/common/download?name=${row.image}` ]" >
             <div slot="error" class="image-slot">
-              <img src="./../../images/noImg.png"  style="width: auto; height: 40px; border:none;" >
+              <img src="./../../images/404-images/404-cloud.png"  style="width: auto; height: 40px; border:none;" >
             </div>  
           </el-image>
           </template>
         </el-table-column>
         <el-table-column
           prop="categoryName"
-          label="菜品分类"></el-table-column>
+          label="美食分类"></el-table-column>
         <el-table-column label="售价">
           <template slot-scope="scope">
             <span style="margin-right: 10px;">￥{{ scope.row.price/100 }}</span>
@@ -75,12 +75,12 @@
         </el-table-column>
         <el-table-column label="售卖状态">
           <template slot-scope="scope">
-            <span style="margin-right: 10px;">{{ scope.row.status == '0' ? '停售' : '启售' }}</span>
+            <span style="margin-right: 10px;">{{ scope.row.status === '0' ? '停售' : '启售' }}</span>
           </template>
         </el-table-column>
         <el-table-column
-          prop="updateTime"
-          label="最后操作时间"
+          prop="shopName"
+          label="店家"
         >
         </el-table-column>
         <el-table-column
@@ -103,7 +103,7 @@
               class="blueBug"
               @click="statusHandle(scope.row)"
             >
-              {{ scope.row.status == '0' ? '启售' : '停售' }}
+              {{ scope.row.status === '0' ? '启售' : '停售' }}
             </el-button>
             <el-button
               type="text"
@@ -118,7 +118,7 @@
       </el-table>
       <el-pagination
         class="pageList"
-        :page-sizes="[10, 20, 30, 40]"
+        :page-sizes="[5,10]"
         :page-size="pageSize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="counts"
@@ -135,7 +135,7 @@
     <!-- 引入axios -->
     <script src="../../plugins/axios/axios.min.js"></script>
     <script src="../../js/request.js"></script>
-    <script src="../../api/food.js"></script>
+    <script src="../../api/goods.js"></script>
     <script>
       new Vue({
         el: '#food-app',
@@ -147,7 +147,7 @@
              pageSize: 10,
              tableData : [],
              dishState : '',
-             checkList: []
+             checkList: [],
           }
         },
         computed: {},
@@ -163,8 +163,8 @@
               pageSize: this.pageSize,
               name: this.input ? this.input : undefined
             }
-            await getDishPage(params).then(res => {
-              if (String(res.code) === '1') {
+            await getGoodsPage(params).then(res => {
+              if (String(res.code) === '200') {
                 this.tableData = res.data.records || []
                 this.counts = res.data.total
               }
@@ -184,13 +184,13 @@
             if (st === 'add'){
               window.parent.menuHandle({
                 id: '4',
-                url: '/backend/page/food/add.html',
+                url: '/page/goods/add.html',
                 name: '添加菜品'
               },true)
             } else {
               window.parent.menuHandle({
                 id: '4',
-                url: '/backend/page/food/add.html?id='+st,
+                url: '/page/goods/add.html?id='+st,
                 name: '修改菜品'
               },true)
             }
@@ -207,8 +207,8 @@
               'confirmButtonText': '确定',
               'cancelButtonText': '取消',
             }).then(() => {
-              deleteDish(type === '批量' ? this.checkList.join(',') : id).then(res => {
-                if (res.code === 1) {
+              deleteGoods(type === '批量' ? this.checkList.join(',') : id).then(res => {
+                if (res.code === 200) {
                   this.$message.success('删除成功！')
                   this.handleQuery()
                 } else {
@@ -242,7 +242,7 @@
             }).then(() => {
               // 起售停售---批量起售停售接口
               dishStatusByStatus(this.dishState).then(res => {
-                if (res.code === 1) {
+                if (res.code === 200) {
                   this.$message.success('菜品状态已经更改成功！')
                   this.handleQuery()
                 } else {

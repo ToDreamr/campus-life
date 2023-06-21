@@ -29,10 +29,9 @@
             <!--图标部分-->
             <img src="../../images/login/logo.jpg" style="width:100px;height:102px; round-clip: v-bind(10)" alt="" />
           </div>
-          <el-form-item prop="username">
-            <el-input v-model="loginForm.id" type="text" auto-complete="off" placeholder="账号" maxlength="20"
-                      prefix-icon="iconfont icon-member" />
-          </el-form-item>
+          <el-form-item prop="id">
+            <el-input v-model="loginForm.id" type="text" auto-complete="off" placeholder="账号" maxlength="20" prefix-icon="iconfont icon-member"/>>
+           </el-form-item>
           <el-form-item prop="username">
             <el-input v-model="loginForm.username" type="text" auto-complete="off" placeholder="用户名" maxlength="20"
               prefix-icon="iconfont icon-user" />
@@ -69,9 +68,9 @@
       data() {
         return {
           loginForm:{
-            id:'1',
-            username: 'admin',
-            password: '123456'
+            id:'',
+            username: '',
+            password: ''
           },
           loading: false
         }
