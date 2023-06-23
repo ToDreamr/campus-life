@@ -51,14 +51,15 @@
           width="25"
         ></el-table-column>
         <el-table-column
-          prop="name"
+          prop="goodsName"
           label="美食名"
         ></el-table-column>
-        <el-table-column prop="image" label="图片" align="center">
+        <el-table-column prop="goodsImage" label="图片" align="center">
           <template slot-scope="{ row }">
+            <!--下载 图片-->
             <el-image style="width: auto; height: 40px; border:none;cursor: pointer;" 
-            :src="getImage(row.image)" 
-            :preview-src-list="[ `/common/download?name=${row.image}` ]" >
+            :src="getImage(row.goodsImage)"
+            :preview-src-list="[ `/common/download?name=${row.goodsImage}` ]" >
             <div slot="error" class="image-slot">
               <img src="./../../images/404-images/404-cloud.png"  style="width: auto; height: 40px; border:none;" >
             </div>  
@@ -66,16 +67,16 @@
           </template>
         </el-table-column>
         <el-table-column
-          prop="categoryName"
-          label="美食分类"></el-table-column>
+          prop="goodDescription"
+          label="详情"></el-table-column>
         <el-table-column label="售价">
           <template slot-scope="scope">
-            <span style="margin-right: 10px;">￥{{ scope.row.price/100 }}</span>
+            <span style="margin-right: 10px;">￥{{ scope.row.goodsPrice/100 }}</span>
           </template>
         </el-table-column>
         <el-table-column label="售卖状态">
           <template slot-scope="scope">
-            <span style="margin-right: 10px;">{{ scope.row.status === '0' ? '停售' : '启售' }}</span>
+            <span style="margin-right: 10px;">{{ scope.row.goodsIsdroped === '1' ? '停售' : '启售' }}</span>
           </template>
         </el-table-column>
         <el-table-column
@@ -103,7 +104,7 @@
               class="blueBug"
               @click="statusHandle(scope.row)"
             >
-              {{ scope.row.status === '0' ? '启售' : '停售' }}
+              {{ scope.row.goodsIsdroped === '0' ? '启售' : '停售' }}
             </el-button>
             <el-button
               type="text"
@@ -144,10 +145,15 @@
              input: '',
              counts: 0,
              page: 1,
-             pageSize: 10,
+             pageSize: 5,
              tableData : [],
              dishState : '',
              checkList: [],
+              id : '',
+              goodDescription:'',
+              goodsImage:'',
+              goodsName:'',
+              goodsIsdroped : '',
           }
         },
         computed: {},
@@ -177,7 +183,21 @@
           },
           handleQuery() {
             this.page = 1;
-            this.init();
+            //定义传递参数
+            const params = {
+              keyWords: this.keyWords
+            }
+            if (params.keyWords===''){
+              this.init()
+            }
+            goodsQuery(params).then(res=>{
+              if (String(res.code) === '200') {
+                this.tableData = res.data || []
+                this.counts = res.data.total
+              }
+            }).catch(err => {
+              this.$message.error('请求出错了：' + err)
+            })
           },
           // 添加
           addFoodtype (st) {

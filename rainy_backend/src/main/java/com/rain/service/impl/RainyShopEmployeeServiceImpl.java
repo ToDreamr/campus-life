@@ -26,6 +26,8 @@ import java.util.stream.Collectors;
 public class RainyShopEmployeeServiceImpl extends ServiceImpl<RainyShopEmployeeMapper, RainyShopEmployee> implements RainyShopEmployeeService {
     @Autowired
     RainyShopEmployeeMapper employeeMapper;
+    @Autowired
+    private ValidService validService;
     @Override
     public Result<RainyShopEmployee> postEmployee(RainyShopEmployee employee) {
         //接收前端传入的json格式数据参数，封装为员工类将其通过mybatis来保存。
@@ -90,16 +92,7 @@ public class RainyShopEmployeeServiceImpl extends ServiceImpl<RainyShopEmployeeM
     public Result<List<RainyShopEmployee>> deleteEmployee(int id) {
         //查询ID
         //返回删除之后的员工列表
-        if (employeeMapper.selectById(id) == null) {
-            return Result.errorMsg("不存在此ID员工");
-        }
-        try {
-            employeeMapper.deleteById(id);
-            return Result.success("删除成功",employeeMapper.selectList(new LambdaQueryWrapper<RainyShopEmployee>()));
-        }catch (Exception e){
-            e.printStackTrace();
-            return Result.errorMsg("内部服务错误");
-        }
+        return validService.deleteByIdAndMapper(id,employeeMapper);
     }
 
     @Override

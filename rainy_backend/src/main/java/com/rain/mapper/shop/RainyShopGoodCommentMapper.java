@@ -1,9 +1,13 @@
 package com.rain.mapper.shop;
 
+import com.rain.entity.pojo.shop.RainyShopEmployee;
 import com.rain.entity.pojo.shop.RainyShopGoodComment;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
 * @author Rainy-Heights

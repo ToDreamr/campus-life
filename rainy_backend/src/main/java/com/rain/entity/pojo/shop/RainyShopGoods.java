@@ -6,6 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.ToString;
@@ -52,7 +53,7 @@ public class RainyShopGoods implements Serializable {
     @Size(max= 1000,message="编码长度不能超过1000")
     @ApiModelProperty("描述")
     @Length(max= 1000,message="编码长度不能超过1,000")
-    private String goodDescription;
+    private String goodsDescription;
     /**
     * 
     */
@@ -101,7 +102,7 @@ public class RainyShopGoods implements Serializable {
     * 
     */
     public void setGoodDescription(String goodDescription){
-    this.goodDescription = goodDescription;
+    this.goodsDescription = goodDescription;
     }
 
     /**
@@ -144,7 +145,7 @@ public class RainyShopGoods implements Serializable {
     * 
     */
     public String getGoodDescription(){
-    return this.goodDescription;
+    return this.goodsDescription;
     }
 
     /**

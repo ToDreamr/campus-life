@@ -1,7 +1,7 @@
 // 查询列表接口
 const getGoodsPage = (params) => {
   return $axios({
-    url: '/goods/page',
+    url: '/shop/goods/page',
     method: 'get',
     params
   })
@@ -10,7 +10,7 @@ const getGoodsPage = (params) => {
 // 删除接口
 const deleteGoods = (ids) => {
   return $axios({
-    url: '/goods',
+    url: '/shop/goods',
     method: 'delete',
     params: { ids }
   })
@@ -19,7 +19,7 @@ const deleteGoods = (ids) => {
 // 修改接口
 const editGoods = (params) => {
   return $axios({
-    url: '/goods',
+    url: '/shop/goods',
     method: 'put',
     data: { ...params }
   })
@@ -28,7 +28,7 @@ const editGoods = (params) => {
 // 新增接口
 const addGoods= (params) => {
   return $axios({
-    url: '/goods',
+    url: '/shop/goods',
     method: 'post',
     data: { ...params }
   })
@@ -37,7 +37,7 @@ const addGoods= (params) => {
 // 查询详情
 const queryGoodsById = (id) => {
   return $axios({
-    url: `/goods/${id}`,
+    url: `/shop/goods/${id}`,
     method: 'get'
   })
 }
@@ -45,7 +45,7 @@ const queryGoodsById = (id) => {
 // 获取菜品分类列表
 const getClassifyList = (params) => {
   return $axios({
-    url: '/classify/list',
+    url: '/shop/classify/list',
     method: 'get',
     params
   })
@@ -54,7 +54,7 @@ const getClassifyList = (params) => {
 // 查菜品列表的接口
 const queryDishList = (params) => {
   return $axios({
-    url: '/goods/list',
+    url: '/shop/goods/list',
     method: 'get',
     params
   })
@@ -75,8 +75,17 @@ const commonDownload = (params) => {
 // 起售停售---批量起售停售接口
 const dishStatusByStatus = (params) => {
   return $axios({
-    url: `/goods/status/${params.status}`,
+    url: `/shop/goods/status/${params.status}`,
     method: 'post',
     params: { ids: params.id }
+  })
+}
+
+
+function goodsQuery(params) {
+  return $axios({
+    url: `/shop/goods/key`,
+    method: 'get',
+    params
   })
 }

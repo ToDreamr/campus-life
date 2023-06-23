@@ -3,6 +3,7 @@ package com.rain;
 import com.rain.service.FileUploadService;
 
 import com.rain.service.RainyShopEmployeeService;
+import com.rain.service.RainyShopGoodsService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -15,9 +16,11 @@ class LifeBackendApplicationTests {
     FileUploadService uploadService;
     @Resource
     RainyShopEmployeeService employeeService;
+    @Resource
+    RainyShopGoodsService goodsService;
     @Test
     void contextLoads() throws IOException {
-        System.out.println(employeeService.classifyPage(2, 8));
+        System.out.println(goodsService.deleteGoods(12));
     }
 
 }
