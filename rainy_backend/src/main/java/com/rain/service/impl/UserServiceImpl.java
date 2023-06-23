@@ -31,4 +31,9 @@ public class UserServiceImpl extends ServiceImpl<RainyUserMapper, RainyUser> imp
         }
         throw new BaseException("输入参数有误或不存在该用户");
     }
+
+    @Override
+    public RainyUser getUser(int id) {
+        return userMapper.selectById(id);
+    }
 }

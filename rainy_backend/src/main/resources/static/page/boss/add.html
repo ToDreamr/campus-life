@@ -377,7 +377,6 @@
             seachKey: '',
             dishList: [],
             imageUrl: '',
-            actionType: '',
             dishTable: [],
             dialogVisible: false,
             checkList: [],
@@ -547,7 +546,7 @@
                   return 
                 }
                 // delete prams.dishList
-                if (this.actionType == 'add') {
+                if (this.actionType === 'add') {
                   delete prams.id
                   addSetmeal(prams)
                     .then((res) => {

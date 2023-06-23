@@ -3,7 +3,9 @@ package com.rain.controller.shop;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.rain.entity.common.Result;
+import com.rain.entity.dto.EmployeeDTO;
 import com.rain.entity.pojo.shop.RainyShopEmployee;
+import com.rain.mapper.shop.RainyShopEmployeeMapper;
 import com.rain.service.RainyShopEmployeeService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,8 @@ import java.util.List;
 public class EmployeeController {
     @Autowired
     private RainyShopEmployeeService employeeService;
+    @Autowired
+    private RainyShopEmployeeMapper employeeMapper;
 
     @PostMapping
     @ResponseBody
@@ -50,9 +54,11 @@ public class EmployeeController {
 
     @GetMapping("/page")
     public Result<Page<RainyShopEmployee>> pageEmployee(int page, int pageSize){
-        LambdaQueryWrapper<RainyShopEmployee> queryWrapper=new LambdaQueryWrapper<>();
-        Page<RainyShopEmployee> pageInfo=new Page<>(page,pageSize);
-        return Result.success(employeeService.page(pageInfo,queryWrapper));
+        Page<RainyShopEmployee> page1 = new Page<>(page,pageSize);
+        page1.setTotal(employeeService.count());//设置总数
+        List<RainyShopEmployee> employeeList=employeeService.classifyPage(page,pageSize);//替换数据，不传回隐私数据
+        page1.setRecords(employeeList);
+        return Result.success(page1);
     }
 
     @GetMapping("/key")

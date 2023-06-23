@@ -1,8 +1,10 @@
 package com.rain.service;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.rain.entity.common.Result;
+import com.rain.entity.dto.EmployeeDTO;
 import com.rain.entity.pojo.shop.RainyShopEmployee;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,4 +24,5 @@ public interface RainyShopEmployeeService extends IService<RainyShopEmployee> {
     Result<List<RainyShopEmployee>> deleteEmployee( int id);
     RainyShopEmployee getById(int id);
     List<RainyShopEmployee> queryByName(String keyWords);
+    List<RainyShopEmployee> classifyPage(int page, int pageSize);
 }

@@ -2,8 +2,10 @@ package com.rain.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.AbstractWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.rain.entity.common.Result;
+import com.rain.entity.dto.EmployeeDTO;
 import com.rain.entity.pojo.shop.RainyShopEmployee;
 import com.rain.mapper.shop.RainyShopEmployeeMapper;
 import com.rain.service.RainyShopEmployeeService;
@@ -108,6 +110,14 @@ public class RainyShopEmployeeServiceImpl extends ServiceImpl<RainyShopEmployeeM
     @Override
     public List<RainyShopEmployee> queryByName(String keyWords) {
         return employeeMapper.queryByName(keyWords);
+    }
+
+
+    @Override
+    public List<RainyShopEmployee> classifyPage(int page, int pageSize) {
+
+        List<RainyShopEmployee> rainyShopEmployees = employeeMapper.classifyPage(page, pageSize);
+        return rainyShopEmployees;
     }
 
 }

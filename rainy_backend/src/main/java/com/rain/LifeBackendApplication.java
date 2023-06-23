@@ -22,9 +22,9 @@ public class LifeBackendApplication {
 
     public static void main(String[] args) {
         ApplicationContext context=SpringApplication.run(LifeBackendApplication.class, args);
-        CurrentUser.setCurrentId(Math.abs(UUID.randomUUID().getLeastSignificantBits()%20000));
+//        CurrentUser.setCurrentId(Math.abs(UUID.randomUUID().getLeastSignificantBits()%20000));
         //随机根据当前时间戳生成线程ID
-        log.info("本地随机生成线程ID:{}",CurrentUser.getCurrentId());
+//        log.info("本地随机生成线程ID:{}",CurrentUser.getCurrentId());
         log.info("http://localhost:"+context.getEnvironment().getProperty("server.port")+"/page/login/login.html");
     }
 }
