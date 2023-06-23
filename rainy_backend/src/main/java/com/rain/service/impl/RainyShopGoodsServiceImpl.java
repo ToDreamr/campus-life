@@ -24,10 +24,10 @@ public class RainyShopGoodsServiceImpl extends ServiceImpl<RainyShopGoodsMapper,
     @Resource
     private RainyShopGoodsMapper goodsMapper;
     @Resource
-    ValidService validService;
+    private ValidService validService;
     @Override
     public Result<RainyShopGoods> postGoods(RainyShopGoods Goods) {
-        return null;
+        return validService.postByIdAndMapper(Goods, Goods.getId(), goodsMapper);
 
     }
     @Override

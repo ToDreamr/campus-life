@@ -44,4 +44,17 @@ public class ValidService<T> extends LambdaQueryWrapper<T> {
             return Result.errorMsg("修改失败");
         }
     }
+
+    Result<Object> postByIdAndMapper(T t,Integer id,BaseMapper mapper){
+        try {
+            if (mapper.selectById(id)!=null) {
+                return Result.errorMsg("已存在，无需继续添加");
+            }
+            mapper.insert(t);
+            return Result.success("添加成功",t);
+        }catch (Exception e){
+            e.printStackTrace();
+            return Result.errorMsg("添加失败，存在内部服务异常");
+        }
+    }
 }

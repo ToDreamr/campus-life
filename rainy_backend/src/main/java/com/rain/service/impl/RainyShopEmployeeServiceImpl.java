@@ -31,18 +31,7 @@ public class RainyShopEmployeeServiceImpl extends ServiceImpl<RainyShopEmployeeM
     @Override
     public Result<RainyShopEmployee> postEmployee(RainyShopEmployee employee) {
         //接收前端传入的json格式数据参数，封装为员工类将其通过mybatis来保存。
-        LambdaQueryWrapper<RainyShopEmployee> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(RainyShopEmployee::getId,employee.getId());
-        try {
-            if (employeeMapper.selectById(employee.getId())!=null){
-                return Result.errorMsg("该员工已存在，无需继续添加");
-            }
-            employeeMapper.insert(employee);
-            return Result.success("添加成功",employee);
-        }catch (Exception e){
-            e.printStackTrace();
-            return Result.errorMsg("添加失败，存在内部服务异常");
-        }
+        return validService.postByIdAndMapper(employee,employee.getId(),employeeMapper);
     }
 
     @Override
@@ -65,22 +54,7 @@ public class RainyShopEmployeeServiceImpl extends ServiceImpl<RainyShopEmployeeM
      */
     @Override
     public Result<RainyShopEmployee> modifyEmployee(RainyShopEmployee rainyShopEmployee) {
-        //修改填入的信息
-        //检查修改是否合法
-        //获取员工ID
-        //最后返回修改好的数据
-        Integer id = rainyShopEmployee.getId();
-        try {
-            if (rainyShopEmployee.getId()==null){
-                return Result.errorMsg("员工ID不能为空");
-            }
-            employeeMapper.updateById(rainyShopEmployee);
-            //修改完成，返回修改后的员工数据
-            return Result.success("修改员工信息完成",employeeMapper.selectById(id));
-        }catch (Exception e){
-            e.printStackTrace();
-            return Result.errorMsg("修改失败");
-        }
+       return validService.modifyByIdAndMapper(rainyShopEmployee,employeeMapper,rainyShopEmployee.getId());
     }
 
     /**
