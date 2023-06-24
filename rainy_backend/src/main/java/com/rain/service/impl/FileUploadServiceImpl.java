@@ -33,9 +33,4 @@ public class FileUploadServiceImpl implements FileUploadService {
                return Result.errorMsg("上传失败");
        }
     }
-
-    @Override
-    public void printHello() {
-        System.out.println("I am being used.");
-    }
 }

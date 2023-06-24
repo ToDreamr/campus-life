@@ -120,9 +120,11 @@
           />
         </el-form-item>
         <el-form-item label="当前时间：">
-          <el-input v-model="classData.modifyTime"  type="date" placeholder="当前时间" />
+          <el-input v-model="classData.modifyTime"  type="text" placeholder="当前时间" />
         </el-form-item>
-
+        <el-form-item label="状态：">
+          <el-input v-model="classData.status"  type="text" placeholder="状态" />
+        </el-form-item>
       </el-form>
 
       <span

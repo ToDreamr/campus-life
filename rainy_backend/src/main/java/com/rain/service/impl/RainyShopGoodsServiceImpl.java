@@ -8,6 +8,7 @@ import com.rain.entity.pojo.shop.RainyShopGoods;
 import com.rain.mapper.shop.RainyShopGoodsMapper;
 import com.rain.service.RainyShopGoodsService;
 
+import com.rain.service.ValidService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -25,29 +26,43 @@ public class RainyShopGoodsServiceImpl extends ServiceImpl<RainyShopGoodsMapper,
     private RainyShopGoodsMapper goodsMapper;
     @Resource
     private ValidService validService;
+
+    /**
+     * 添加商品
+     * @param goods 商品实例
+     * @return
+     */
     @Override
-    public Result<RainyShopGoods> postGoods(RainyShopGoods Goods) {
-        return validService.postByIdAndMapper(Goods, Goods.getId(), goodsMapper);
+    public Result<RainyShopGoods> postGoods(RainyShopGoods goods) {
+        return validService.postByIdAndMapper(goods, goods.getId(), goodsMapper);
 
     }
-    @Override
-    public Result<List<RainyShopGoods>> getGoods() {
-        return null;
-    }
 
+    /**
+     * 修改
+     * @param rainyShopGoods 实体
+     * @return 修改之后的实体
+     */
     @Override
     public Result<RainyShopGoods> modifyGoods(RainyShopGoods rainyShopGoods) {
         return validService.modifyByIdAndMapper(rainyShopGoods,goodsMapper, rainyShopGoods.getId());
     }
 
+    /**
+     * 删除
+     * @param id 编号
+     * @return 删除之后的列表
+     */
     @Override
     public Result<List<RainyShopGoods>> deleteGoods(int id) {
         return validService.deleteByIdAndMapper(id,goodsMapper);
     }
 
+    /*
+    * 自定义查询*/
     @Override
     public RainyShopGoods getById(int id) {
-        return null;
+        return goodsMapper.selectById(id);
     }
 
     @Override

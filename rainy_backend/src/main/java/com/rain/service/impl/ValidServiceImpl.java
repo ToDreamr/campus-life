@@ -3,9 +3,8 @@ package com.rain.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.rain.entity.common.Result;
-import com.rain.entity.pojo.shop.RainyShopEmployee;
+import com.rain.service.ValidService;
 import org.jetbrains.annotations.NotNull;
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,21 +16,21 @@ import java.util.List;
  */
 @Service
 //写一套增删改查的复用代码
-public class ValidService<T> extends LambdaQueryWrapper<T> {
-    Result<List<T>> deleteByIdAndMapper(int id,  BaseMapper mapper){
+public class ValidServiceImpl<T> extends LambdaQueryWrapper<T> implements ValidService {
+    public Result<List<T>> deleteByIdAndMapper(int id, BaseMapper mapper){
         if (mapper.selectById(id)==null){
             return Result.errorMsg("不存在这样的ID");
         }
         try {
             mapper.deleteById(id);
-            return Result.success("删除成功",mapper.selectList(new ValidService()));//使用了直接继承的queryWrapper
+            return Result.success("删除成功",mapper.selectList(new ValidServiceImpl()));//使用了直接继承的queryWrapper
         }catch (Exception e){
             e.printStackTrace();
             return Result.errorMsg("内部服务错误");
         }
     }
 
-    Result<Object> modifyByIdAndMapper(T t, @NotNull BaseMapper mapper, int id){
+   public Result<Object> modifyByIdAndMapper(Object t, @NotNull BaseMapper mapper, int id){
         //修改填入的信息
         //检查修改是否合法
         //获取ID
@@ -45,7 +44,7 @@ public class ValidService<T> extends LambdaQueryWrapper<T> {
         }
     }
 
-    Result<Object> postByIdAndMapper(T t,Integer id,BaseMapper mapper){
+   public Result<Object> postByIdAndMapper(Object t, Integer id, BaseMapper mapper){
         try {
             if (mapper.selectById(id)!=null) {
                 return Result.errorMsg("已存在，无需继续添加");

@@ -46,7 +46,7 @@ public class ClassifyController {
     @ResponseBody
     public Result<RainyShopClassify> modifyClassify(@RequestBody RainyShopClassify classify){
         //修改并且返回修改后的信息，传回响应信息不能为空
-        return Result.success(shopClassifyService.modifyClassify(classify),shopClassifyService.getById(classify.getId()));
+        return shopClassifyService.modifyClassify(classify);
     }
     @PostMapping
     @ResponseBody

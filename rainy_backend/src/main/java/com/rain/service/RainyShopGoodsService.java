@@ -14,7 +14,6 @@ import java.util.List;
 */
 public interface RainyShopGoodsService extends IService<RainyShopGoods> {
     Result<RainyShopGoods> postGoods(RainyShopGoods Goods);
-    Result<List<RainyShopGoods>> getGoods();
     Result<RainyShopGoods> modifyGoods( RainyShopGoods rainyShopGoods);
     Result<List<RainyShopGoods>> deleteGoods( int id);
     RainyShopGoods getById(int id);

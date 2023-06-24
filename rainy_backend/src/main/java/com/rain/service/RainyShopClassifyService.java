@@ -18,7 +18,7 @@ import java.util.List;
 */
 public interface RainyShopClassifyService extends IService<RainyShopClassify> {
     //修改分类信息
-    String modifyClassify( RainyShopClassify classify);
+    Result<RainyShopClassify> modifyClassify( RainyShopClassify classify);
     Result<RainyShopClassify> postClassify(RainyShopClassify classify);
     Result<List<RainyShopClassify>> remove( Integer id);
 }

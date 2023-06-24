@@ -62,7 +62,7 @@ public class RainyShopClassify implements Serializable {
      *
      */
     @ApiModelProperty("修改时间")
-    @NotNull(message="[时间]不能为空")
+//    @NotNull(message="[时间]不能为空")
     @Getter
     @Setter
     //转化字段问题

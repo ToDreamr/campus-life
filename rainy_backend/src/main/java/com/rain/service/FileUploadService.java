@@ -13,5 +13,4 @@ import java.io.IOException;
 @Service
 public interface FileUploadService {
     Result<String> uploadFile(String fileName,String destination) throws IOException;
-    void printHello();
 }
