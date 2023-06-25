@@ -21,6 +21,7 @@ import java.util.List;
  */
 @Service
 public class RainyShopGoodsServiceImpl extends ServiceImpl<RainyShopGoodsMapper, RainyShopGoods> implements RainyShopGoodsService {
+    //调用逻辑关系：控制层调用Service,Service通过统一公共方法ValidService来调用Mapper层面
 
     @Resource
     private RainyShopGoodsMapper goodsMapper;

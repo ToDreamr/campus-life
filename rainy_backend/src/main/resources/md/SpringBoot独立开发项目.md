@@ -54,3 +54,7 @@
 |                                                                                                                                              |  |  |
 
 #### 降低耦合度，明确分工Service和Mapper
+###项目亮点：
+调用逻辑关系：控制层调用Service,
+Service通过统一公共方法ValidService来调用Mapper层面，降低了耦合度
+和重复性代码的编写

@@ -3,6 +3,7 @@ package com.rain.controller.user.auth;
 import com.rain.entity.common.CurrentUser;
 import com.rain.entity.common.R;
 import com.rain.entity.common.Result;
+import com.rain.entity.exception.UserLoginException;
 import com.rain.entity.pojo.user.RainyUser;
 import com.rain.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -33,11 +34,15 @@ public class AuthController {
         * 1:前期采用数据库登录验证，比对数据完成之后放行页面
         * 2:添加cookie和Session
         * 3：后期添加校验码等功能*/
-        RainyUser user = userService.login(rainyUser.getUsername(), rainyUser.getPassword(), rainyUser.getId());
-        if (user!=null){
-            setCookie(response,user.getUsername(),String.valueOf(user.getId()),true);
-            CurrentUser.setCurrentId(user.getId());//设置当前用户
-            return Result.success("登录成功",user);
+        try {
+            RainyUser user = userService.login(rainyUser.getUsername(), rainyUser.getPassword(), rainyUser.getId());
+            if (user!=null){
+                setCookie(response,user.getUsername(),String.valueOf(user.getId()),true);
+                CurrentUser.setCurrentId(user.getId());//设置当前用户
+                return Result.success("登录成功",user);
+            }
+        }catch (UserLoginException e){
+            return Result.errorMsg(e.getMessage());//返回上一层Service抛出的错误信息
         }
         throw new RuntimeException("登录失败");
     }
@@ -95,11 +100,18 @@ public class AuthController {
         response.addCookie(cookie2);
     }
 
+    /**
+     *
+     * @param response 浏览器响应体
+     * @return 返回登出成功信息并且清除Cookie和Session浏览器信息
+     */
     @PostMapping("/logout")
     public Result<String> logout(HttpServletResponse response){
         //清除session，cookie等信息
         setCookie(response,userService.getUser(CurrentUser.getCurrentId()).getUsername(),
                 String.valueOf(userService.getUser(CurrentUser.getCurrentId()).getId()),false);
+        //没有解决未登录时没有录入状态信息的bug：
+        //Cannot invoke "java.lang.Long.longValue()" because the return value of "java.lang.ThreadLocal.get()" is null
         return Result.success("退出成功");
     }
 

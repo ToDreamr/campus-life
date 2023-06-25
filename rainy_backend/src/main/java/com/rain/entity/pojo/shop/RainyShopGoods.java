@@ -61,6 +61,8 @@ public class RainyShopGoods implements Serializable {
     @ApiModelProperty("是否下架")
     public Integer goodsIsdroped;
 
+
+
     /**
      * 
      */
@@ -155,4 +157,19 @@ public class RainyShopGoods implements Serializable {
     return this.goodsIsdroped;
     }
 
+    public String getGoodsDescription() {
+        return goodsDescription;
+    }
+
+    public void setGoodsDescription(String goodsDescription) {
+        this.goodsDescription = goodsDescription;
+    }
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
 }

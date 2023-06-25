@@ -28,6 +28,7 @@ public class ExceptionControllerAdvice {
         return Result.error("参数不合法，返回数据为空",null);
     }
 
+    //最底层的抛出，返回给前端这条信息将会
     @ExceptionHandler(RuntimeException.class)
     public Result<String> validateHandler(RuntimeException exception){
         log.error(exception.getMessage());
