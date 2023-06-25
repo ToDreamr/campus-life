@@ -1,11 +1,9 @@
 package com.rain.controller.shop;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.rain.annotations.LogWhenUsed;
 import com.rain.entity.common.Result;
 import com.rain.entity.pojo.shop.RainyShopClassify;
-import com.rain.entity.pojo.shop.RainyShopEmployee;
 import com.rain.service.RainyShopClassifyService;
 
 import io.swagger.annotations.Api;
