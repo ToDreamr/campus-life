@@ -83,8 +83,7 @@
             <el-button  @click="goBack()">
               取消
             </el-button>
-            <el-button v-if="actionType == 'add'" type="primary" @click="submitForm('ruleForm', false)"
-            >
+            <el-button v-if="actionType === 'add'" type="primary" @click="submitForm('ruleForm', false)">
               保存
             </el-button>
             <el-button
@@ -206,11 +205,11 @@
                     sex: this.ruleForm.sex === '女' ? '女' : '男'
                   }
                   editEmployee(params).then(res => {
-                    if (res.code === 1) {
+                    if (res.code === 200) {
                       this.$message.success('员工信息修改成功！')
                       this.goBack()
                     } else {
-                      this.$message.error(res.msg || '操作失败')
+                      this.$message.error(res.message || '操作失败')
                     }
                   }).catch(err => {
                     this.$message.error('请求出错了：' + err)

@@ -19,19 +19,21 @@ public class ExceptionControllerAdvice {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public Result<String> validateHandler(MethodArgumentNotValidException exception){
         ObjectError error = exception.getBindingResult().getAllErrors().get(0);
-        return Result.errorMsg(error.getDefaultMessage());
+        String errorDefaultMessage = error.getDefaultMessage();
+        log.error("1:"+errorDefaultMessage);
+        return Result.errorMsg(errorDefaultMessage);
     }
 
     @ExceptionHandler(NullPointerException.class)
     public Result<String> validateHandler(NullPointerException exception){
-        log.error(exception.getMessage());
+        log.error("2:"+exception.getMessage());
         return Result.error("参数不合法，返回数据为空",null);
     }
 
     //最底层的抛出，返回给前端这条信息将会
     @ExceptionHandler(RuntimeException.class)
     public Result<String> validateHandler(RuntimeException exception){
-        log.error(exception.getMessage());
+        log.error("3:"+exception.getMessage());
         return Result.error(exception.getMessage(), null);
     }
 }

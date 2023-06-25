@@ -2,7 +2,6 @@ package com.rain.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.rain.entity.exception.BaseException;
 import com.rain.entity.exception.UserLoginException;
 import com.rain.entity.pojo.user.RainyUser;
 import com.rain.mapper.user.RainyUserMapper;
@@ -11,7 +10,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import javax.security.auth.login.LoginException;
 import java.util.List;
 
 /**

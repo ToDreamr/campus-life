@@ -1,9 +1,7 @@
 package com.rain.controller.shop;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.rain.entity.common.Result;
-import com.rain.entity.dto.EmployeeDTO;
 import com.rain.entity.pojo.shop.RainyShopEmployee;
 import com.rain.mapper.shop.RainyShopEmployeeMapper;
 import com.rain.service.RainyShopEmployeeService;
@@ -25,8 +23,6 @@ import java.util.List;
 public class EmployeeController {
     @Autowired
     private RainyShopEmployeeService employeeService;
-    @Autowired
-    private RainyShopEmployeeMapper employeeMapper;
 
     @PostMapping
     @ResponseBody

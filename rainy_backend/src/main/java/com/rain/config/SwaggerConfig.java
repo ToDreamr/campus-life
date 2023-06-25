@@ -48,7 +48,7 @@ public class SwaggerConfig {
 
 
     private ApiInfo apiInfo() {
-        Contact contact = new Contact("Riany-Heights", "校园生活", "amixrip@163.com");
+        Contact contact = new Contact("Rainy-Heights", "校园生活", "amixrip@163.com");
         return new ApiInfo(
                 "校园生活后端",
                 "校园生活，此项目的后端",
