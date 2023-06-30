@@ -60,4 +60,12 @@ public class GoodsController {
         System.out.println(keyWords);
         return Result.success("查询成功",goodsService.queryByName(keyWords));
     }
+
+    @PostMapping("/status/{id}")
+    public Result<RainyShopGoods> modifyStatus(@PathVariable int id){
+        RainyShopGoods goods = goodsService.getById(id);
+        goods.setGoodsIsdroped(1);
+        goodsService.modifyGoods(goods);
+        return Result.success("修改成功?",goods);
+    }
 }

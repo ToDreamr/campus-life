@@ -15,9 +15,9 @@
     <div class="container">
       <div class="tableBar">
         <el-input
-          v-model="input"
+          v-model="keyWords"
           placeholder="请输入商品名称"
-          style="width: 250px"
+          style="width: 400px"
           clearable
           @keyup.enter.native="handleQuery"
         >
@@ -25,7 +25,7 @@
             slot="prefix"
             class="el-input__icon el-icon-search"
             style="cursor: pointer"
-            @click="init"
+            @click="handleQuery"
           ></i>
         </el-input>
         <div class="tableLab">
@@ -71,12 +71,13 @@
           label="详情"></el-table-column>
         <el-table-column label="售价">
           <template slot-scope="scope">
-            <span style="margin-right: 10px;">￥{{ scope.row.goodsPrice/100 }}</span>
+            <!-- 无需对数据进行处理 -->
+            <span style="margin-right: 10px;">￥{{ scope.row.goodsPrice }}</span>
           </template>
         </el-table-column>
         <el-table-column label="售卖状态">
           <template slot-scope="scope">
-            <span style="margin-right: 10px;">{{ scope.row.goodsIsdroped === '1' ? '停售' : '启售' }}</span>
+            <span style="margin-right: 10px;">{{ scope.row.goodsIsdroped == '1' ? '停售' : '启售' }}</span>
           </template>
         </el-table-column>
         <el-table-column
@@ -104,7 +105,7 @@
               class="blueBug"
               @click="statusHandle(scope.row)"
             >
-              {{ scope.row.goodsIsdroped === '0' ? '启售' : '停售' }}
+              {{ scope.row.goodsIsdroped == '0' ? '启售' : '停售' }}
             </el-button>
             <el-button
               type="text"
@@ -154,6 +155,7 @@
               goodsImage:'',
               goodsName:'',
               goodsIsdroped : '',
+            keyWords: ''
           }
         },
         computed: {},
@@ -190,7 +192,7 @@
             if (params.keyWords===''){
               this.init()
             }
-            goodsQuery(params).then(res=>{
+            Query(params).then(res=>{
               if (String(res.code) === '200') {
                 this.tableData = res.data || []
                 this.counts = res.data.total
@@ -249,10 +251,10 @@
                 return false
               }
               params.id = this.checkList.join(',')
-              params.status = row
+              params.goodsIsdroped= row
             } else {
               params.id = row.id
-              params.status = row.status ? '0' : '1'
+              params.goodsIsdroped = row.goodsIsdroped ? '0' : '1'
             }
             this.dishState = params
             this.$confirm('确认更改该菜品状态?', '提示', {
@@ -261,12 +263,12 @@
               'type': 'warning'
             }).then(() => {
               // 起售停售---批量起售停售接口
-              dishStatusByStatus(this.dishState).then(res => {
+              dishStatusByStatus(this.goodsIsdroped).then(res => {
                 if (res.code === 200) {
                   this.$message.success('菜品状态已经更改成功！')
                   this.handleQuery()
                 } else {
-                  this.$message.error(res.msg || '操作失败')
+                  this.$message.error(res.message || '操作失败')
                 }
               }).catch(err => {
                   this.$message.error('请求出错了：' + err)

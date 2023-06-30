@@ -16,9 +16,8 @@ import java.util.List;
 */
 @Repository
 public interface RainyShopGoodsMapper extends BaseMapper<RainyShopGoods> {
-    @Select("select * from school_life.rainy_shop_goodrainy_shop_goods.s where goods_name like #{keywords}")
+    @Select("select * from school_life.rainy_shop_goods where goods_name like #{keywords}")
     List<RainyShopGoods> queryByName(String keyWords);
-
 }
 
 

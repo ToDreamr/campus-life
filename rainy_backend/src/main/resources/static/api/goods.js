@@ -75,14 +75,14 @@ const commonDownload = (params) => {
 // 起售停售---批量起售停售接口
 const dishStatusByStatus = (params) => {
   return $axios({
-    url: `/shop/goods/status/${params.status}`,
+    url: `/shop/goods/status/${params.id}`,
     method: 'post',
     params: { ids: params.id }
   })
 }
 
 
-function goodsQuery(params) {
+function Query(params) {
   return $axios({
     url: `/shop/goods/key`,
     method: 'get',

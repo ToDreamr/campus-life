@@ -71,6 +71,7 @@ public class RainyShopEmployeeServiceImpl extends ServiceImpl<RainyShopEmployeeM
     //以下是自定义的sql查询
     @Override
     public RainyShopEmployee getById(int id) {
+        //不应该返回密码信息
         return employeeMapper.selectById(id);
     }
 

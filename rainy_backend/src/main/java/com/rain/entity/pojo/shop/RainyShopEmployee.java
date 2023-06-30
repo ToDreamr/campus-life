@@ -57,7 +57,6 @@ public class RainyShopEmployee implements Serializable {
     */
     @NotNull(message="[]不能为空")
     @ApiModelProperty("是否在职")
-    @TableField(value = "0")
     private Integer isdroped;
     /**
     * 
@@ -70,7 +69,6 @@ public class RainyShopEmployee implements Serializable {
     /**
     * 
     */
-    @NotBlank(message="[]不能为空")
     @Size(max= 20,message="编码长度不能超过20")
     @ApiModelProperty("邮箱")
     @Length(max= 20,message="编码长度不能超过20")

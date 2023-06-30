@@ -160,6 +160,7 @@
             })
           },
           handleQuery() {
+            this.page = 1;
             //定义传递参数
             const params = {
               keyWords: this.keyWords
@@ -175,8 +176,6 @@
             }).catch(err => {
               this.$message.error('请求出错了：' + err)
             })
-            this.page = 1;
-            // this.init();
           },
            // 添加
           addMemberHandle (st) {
@@ -206,7 +205,7 @@
               }).then(() => {
               enableOrDisableEmployee({ 'id': this.id, 'isdroped': !this.isdroped ? 1 : 0 }).then(res => {
                 console.log('enableOrDisableEmployee',res)
-                if (String(res.code) === '1') {
+                if (String(res.code) === '200') {
                   this.$message.success('账号状态更改成功！')
                   this.handleQuery()
                 }

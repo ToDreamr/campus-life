@@ -1,6 +1,5 @@
 server:
   port: 9000
-# 设置配置文件启用为dev环境
 spring:
   profiles:
     active: dev
