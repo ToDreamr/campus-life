@@ -2,10 +2,7 @@ package com.rain.controller.shop;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.rain.entity.common.Result;
-import com.rain.entity.pojo.shop.RainyShopEmployee;
 import com.rain.entity.pojo.shop.RainyShopGoods;
-import com.rain.mapper.shop.RainyShopEmployeeMapper;
-import com.rain.service.RainyShopEmployeeService;
 import com.rain.service.RainyShopGoodsService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,6 +63,6 @@ public class GoodsController {
         RainyShopGoods goods = goodsService.getById(id);
         goods.setGoodsIsdroped(1);
         goodsService.modifyGoods(goods);
-        return Result.success("修改成功?",goods);
+        return Result.success("修改成功",goods);
     }
 }

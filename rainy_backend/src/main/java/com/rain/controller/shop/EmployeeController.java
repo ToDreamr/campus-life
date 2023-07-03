@@ -50,6 +50,7 @@ public class EmployeeController {
 
     @GetMapping("/page")
     public Result<Page<RainyShopEmployee>> pageEmployee(int page, int pageSize){
+        //比较臃肿，还可以继续优化设计
         Page<RainyShopEmployee> page1 = new Page<>(page,pageSize);
         page1.setTotal(employeeService.count());//设置总数
         List<RainyShopEmployee> employeeList=employeeService.classifyPage(page,pageSize);//替换数据，不传回隐私数据

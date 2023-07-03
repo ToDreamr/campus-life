@@ -12,6 +12,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -26,11 +28,10 @@ public class ClassifyController {
     @Resource
     private RainyShopClassifyService shopClassifyService;
     //查询分类
-
     //6月14日，尝试对代码的controller实现标准化开发，重构代码！！！
     @GetMapping
     @ResponseBody
-    @LogWhenUsed(date = "2022-12-23")//调用就查询
+    @LogWhenUsed(date ="2023-6-30")//调用就查询
     public Result<List<RainyShopClassify>> getClassify(){
         return Result.success("查询成功",shopClassifyService.list());
     }

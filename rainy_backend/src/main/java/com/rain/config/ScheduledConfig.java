@@ -16,7 +16,7 @@ import java.util.Date;
 @Slf4j
 public class ScheduledConfig {
 
-    @Scheduled(cron = "10 * * * * ?")
+    @Scheduled(cron = "* 10 * * * ?")
     public void showTime(){
         SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
         log.info("现在是：{}",dateFormat.format(new Date()));
