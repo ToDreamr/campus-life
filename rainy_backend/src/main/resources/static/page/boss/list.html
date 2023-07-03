@@ -141,7 +141,7 @@
     <!-- 引入axios -->
     <script src="../../plugins/axios/axios.min.js"></script>
     <script src="../../js/request.js"></script>
-    <script src="../../api/combo.js"></script>
+    <script src="../../api/boss.js"></script>
     <script>
       new Vue({
         el: '#combo-app',
@@ -170,7 +170,7 @@
               name: this.input ? this.input : undefined
             }
             await getSetmealPage(params).then(res => {
-              if (String(res.code) === '1') {
+              if (String(res.code) === '200') {
                 this.tableData = res.data.records || []
                 this.counts = res.data.total
               }
@@ -218,7 +218,7 @@
                   this.$message.success('删除成功！')
                   this.handleQuery()
                 } else {
-                  this.$message.error(res.msg || '操作失败')
+                  this.$message.error(res.message || '操作失败')
                 }
               }).catch(err => {
                 this.$message.error('请求出错了：' + err)
@@ -231,7 +231,7 @@
             let params = {}
             if (typeof row === 'string' ){
               if (this.checkList.length == 0){
-                this.$message.error('批量操作，请先勾选操作菜品！')
+                this.$message.error('批量操作，请先勾选顾客！')
                 return false
               }
               params.ids = this.checkList.join(',')
@@ -251,7 +251,7 @@
                   this.$message.success('申诉状态已经更改成功！')
                   this.handleQuery()
                 } else {
-                  this.$message.error(res.msg || '操作失败')
+                  this.$message.error(res.message || '操作失败')
                 }
               }).catch(err => {
                   this.$message.error('请求出错了：' + err)
