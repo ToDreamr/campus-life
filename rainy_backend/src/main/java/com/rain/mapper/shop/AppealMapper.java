@@ -1,7 +1,7 @@
 package com.rain.mapper.shop;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.rain.entity.pojo.shop.Appeal;
+import com.rain.entity.pojo.shop.RainyShopAppeal;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -10,5 +10,6 @@ import org.springframework.stereotype.Repository;
  * @Date 2023/7/3 10:43
  */
 @Repository
-public interface AppealMapper extends BaseMapper<Appeal> {
+public interface AppealMapper extends BaseMapper<RainyShopAppeal> {
+
 }

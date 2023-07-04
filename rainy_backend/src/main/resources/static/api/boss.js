@@ -1,7 +1,7 @@
 // 查询列表数据
 const getSetmealPage = (params) => {
   return $axios({
-    url: '/boss/page',
+    url: '/shop/appeal/page',
     method: 'get',
     params
   })

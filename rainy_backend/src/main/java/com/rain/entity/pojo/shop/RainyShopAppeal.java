@@ -7,6 +7,7 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
@@ -16,7 +17,7 @@ import java.math.BigDecimal;
  */
 @Data
 @ApiModel(value = "申述管理实体",description ="")
-public class Appeal {
+public class RainyShopAppeal implements Serializable {
 
     /*
     * 顾客姓名*/

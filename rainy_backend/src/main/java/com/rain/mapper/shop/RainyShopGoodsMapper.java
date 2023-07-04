@@ -1,6 +1,5 @@
 package com.rain.mapper.shop;
 
-import com.rain.entity.pojo.shop.RainyShopEmployee;
 import com.rain.entity.pojo.shop.RainyShopGoods;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Select;
