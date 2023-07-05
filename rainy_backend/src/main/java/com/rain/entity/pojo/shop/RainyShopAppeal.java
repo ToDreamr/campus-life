@@ -1,5 +1,6 @@
 package com.rain.entity.pojo.shop;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -54,4 +55,7 @@ public class RainyShopAppeal implements Serializable {
     @NotNull(message="[]不能为空")
     Integer activeOrNot;
 
+    @NotNull(message = "[该项目不能为空]")
+    @ApiModelProperty("申诉单号")
+    Integer id;
 }

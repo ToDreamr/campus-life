@@ -1,9 +1,6 @@
 package com.rain.controller.common;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
@@ -21,7 +18,7 @@ import java.io.IOException;
 public class MutilFileController {
     //像浏览器页面写图片数据
     @GetMapping("/download")
-    public void downLoad(String name, HttpServletResponse response) throws IOException {
+    public void downLoad(@RequestParam String name, HttpServletResponse response) throws IOException {
         //构造输入流
         FileInputStream ins=new FileInputStream(new File("D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\png\\"+name));
         //构造输出流

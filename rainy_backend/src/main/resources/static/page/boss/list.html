@@ -59,8 +59,8 @@
           label="顾客姓名"
         ></el-table-column>
         <el-table-column prop="image" label="图片"  align="center">
-          <template slot-scope="{ row }">
-            <el-image style="width: auto; height: 40px; border:none;cursor: pointer;" :src="getImage(row.imageUrl)" :preview-src-list="[ `/common/download?name=${row.imageUrl}` ]" >
+          <template slot-scope="{row}">
+            <el-image style="width: auto; height: 40px; border:none;cursor: pointer;" :src="getImage('img.png')" :preview-src-list="[ `/common/download?name=${'img.png'}` ]" >
               <div slot="error" class="image-slot">
                 <img src="./../../images/img.png"  style="width: auto; height: 40px; border:none;" >
               </div> 
@@ -89,7 +89,7 @@
           prop="updateTime"
           label="最后操作时间"
         >
-        </el-table-column>
+        2023-6-27</el-table-column>
         <el-table-column
           label="操作"
           width="160"
@@ -197,7 +197,7 @@
             } else {
               window.parent.menuHandle({
                 id: '5',
-                url: '/page/combo/add.html?id='+st,
+                url: '/page/boss/add.html?id='+st,
                 name: '修改申诉'
               },true)
             }
@@ -235,21 +235,21 @@
                 this.$message.error('批量操作，请先勾选顾客！')
                 return false
               }
-              params.ids = this.checkList.join(',')
-              params.activeOrNot = row
+              params.id = this.checkList.join(',')
+              params.activeOrNot = row.activeOrNot
             } else {
-              params.ids = row.id
-              params.activeOrNot = row.activeOrNot ? '0' : '1'
+              params.id = row.id
+              // params.activeOrNot = row.activeOrNot ? '0' : '1'
             }
-            this.$confirm('确认更改该申诉状态?', '提示', {
+            this.$confirm('确认更改该用户状态?', '提示', {
               'confirmButtonText': '确定',
               'cancelButtonText': '取消',
               'type': 'warning'
             }).then(() => {
               // 起售停售---批量起售停售接口
               setmealStatusByStatus(params).then(res => {
-                if (res.code === 1) {
-                  this.$message.success('申诉状态已经更改成功！')
+                if (res.code === 200) {
+                  this.$message.success('用户状态已经更改成功！')
                   this.handleQuery()
                 } else {
                   this.$message.error(res.message || '操作失败')

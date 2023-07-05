@@ -3,12 +3,11 @@ package com.rain.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.rain.entity.common.Result;
 import com.rain.entity.pojo.shop.RainyShopAppeal;
-import com.rain.entity.pojo.shop.RainyShopGoods;
 import com.rain.mapper.shop.AppealMapper;
 import com.rain.service.BossService;
 import com.rain.service.ValidService;
-import lombok.val;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -30,5 +29,11 @@ public class BossServiceImpl extends ServiceImpl<AppealMapper, RainyShopAppeal> 
         LambdaQueryWrapper<RainyShopAppeal> queryWrapper = new LambdaQueryWrapper<RainyShopAppeal>();
         Page pageInfo=new Page<>(page,pageSize);
         return appealMapper.selectPage(pageInfo,queryWrapper);
+    }
+
+    @Override
+    public String deleteAppeal(int id) {
+        int byId = appealMapper.deleteById(id);
+        return "删除成功";
     }
 }

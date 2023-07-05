@@ -8,11 +8,12 @@ const getSetmealPage = (params) => {
 }
 
 // 删除数据接口
-const deleteSetmeal = (ids) => {
+const deleteSetmeal = (id) => {
   return $axios({
-    url: '/boss',
+    //请求路径变量时，axios的写法如下
+    url: `/shop/appeal/${id}`,
     method: 'delete',
-    params: { ids }
+    params: { id }
   })
 }
 
@@ -45,8 +46,8 @@ const querySetmealById = (id) => {
 // 批量起售禁售
 const setmealStatusByStatus = (params) => {
   return $axios({
-    url: `/boss/status/${params.status}`,
+    url: `/shop/appeal/status/${params.id}`,
     method: 'post',
-    params: { ids: params.ids }
+    params: { id: params.id }
   })
 }

@@ -3,3 +3,5 @@ server:
 spring:
   profiles:
     active: dev
+  main:
+    lazy-initialization: false

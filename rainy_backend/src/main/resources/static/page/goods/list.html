@@ -58,8 +58,8 @@
           <template slot-scope="{ row }">
             <!--下载 图片-->
             <el-image style="width: auto; height: 40px; border:none;cursor: pointer;" 
-            :src="getImage(row.goodsImage)"
-            :preview-src-list="[ `/common/download?name=${row.goodsImage}` ]" >
+            :src="getImage('img.png')"
+            :preview-src-list="[ `/common/download?name=${'img.png'}` ]" >
             <div slot="error" class="image-slot">
               <img src="./../../images/404-images/404-cloud.png"  style="width: auto; height: 40px; border:none;" >
             </div>  

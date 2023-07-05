@@ -17,6 +17,9 @@ spring:
 logging:
   pattern:
     dateformat: HH:mm:ss
+  level:
+    root: info
+    com.rain.entity: error
 
 mybatis-plus:
   global-config:
@@ -24,6 +27,7 @@ mybatis-plus:
       id-type: auto
 #  configuration:
 #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 
 
 
