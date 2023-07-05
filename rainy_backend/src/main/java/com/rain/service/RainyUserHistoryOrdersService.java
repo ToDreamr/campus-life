@@ -1,7 +1,8 @@
 package com.rain.service;
 
-import com.rain.entity.pojo.user.RainyUserHistoryOrders;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.rain.entity.pojo.user.RainyUserHistoryOrders;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 /**
 * @author Rainy-Heights
@@ -9,5 +10,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2023-04-24 16:18:37
 */
 public interface RainyUserHistoryOrdersService extends IService<RainyUserHistoryOrders> {
-
+    Page<RainyUserHistoryOrders> getHistoryOrdersPage(int page,int pageSize);
 }

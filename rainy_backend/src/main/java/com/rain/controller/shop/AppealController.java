@@ -16,7 +16,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("/shop/appeal")
-@Api(tags = "AppealController",description = "")
+@Api(tags = "AppealController",description = "申诉管理")
 public class AppealController {
     @Resource
     private BossService bossService;
@@ -39,15 +39,7 @@ public class AppealController {
      */
     @PostMapping("/status/{id}")
     public Result<RainyShopAppeal> modifyActivity(@PathVariable Integer id){
-       //需要根据顾客实体来修改数据
-        RainyShopAppeal appeal = bossService.getById(id);
-        if (appeal.getActiveOrNot() == 1) {
-            appeal.setActiveOrNot(0);
-        } else {
-            appeal.setActiveOrNot(1);
-        }
-        bossService.updateById(appeal);
-        return Result.success("顾客状态修改成功！",bossService.getById(id));
+        return Result.success("顾客状态修改成功！",bossService.modifyActivity(id));
     }
 
     /**

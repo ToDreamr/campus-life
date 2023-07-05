@@ -6,6 +6,7 @@ import com.rain.entity.common.Result;
 import com.rain.entity.exception.UserLoginException;
 import com.rain.entity.pojo.user.RainyUser;
 import com.rain.service.UserService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,6 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/auth")
 @RestController
 @Slf4j
+@Api(tags = "AuthController",description = "登录注册")
 public class AuthController {
     @Resource
     UserService  userService;

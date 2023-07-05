@@ -19,4 +19,6 @@ public interface BossService extends IService<RainyShopAppeal> {
     Page<RainyShopAppeal> getPage(int page, int pageSize);
     //撤销申诉：
     String deleteAppeal( int id);
+
+    RainyShopAppeal modifyActivity(Integer id);
 }

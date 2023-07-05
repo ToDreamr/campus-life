@@ -3,7 +3,6 @@ package com.rain.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.rain.entity.common.Result;
 import com.rain.entity.pojo.shop.RainyShopAppeal;
 import com.rain.mapper.shop.AppealMapper;
 import com.rain.service.BossService;
@@ -33,7 +32,19 @@ public class BossServiceImpl extends ServiceImpl<AppealMapper, RainyShopAppeal> 
 
     @Override
     public String deleteAppeal(int id) {
-        int byId = appealMapper.deleteById(id);
+        appealMapper.deleteById(id);
         return "删除成功";
+    }
+    @Override
+    public RainyShopAppeal modifyActivity(Integer id) {
+        //需要根据顾客实体来修改数据
+        RainyShopAppeal appeal = appealMapper.selectById(id);
+        if (appeal.getActiveOrNot() == 1) {
+            appeal.setActiveOrNot(0);
+        } else {
+            appeal.setActiveOrNot(1);
+        }
+        appealMapper.updateById(appeal);
+        return appealMapper.selectById(id);
     }
 }

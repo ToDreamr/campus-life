@@ -98,7 +98,7 @@
   width: 777px;
 }
 .flavorBox .addBut {
-  background: #ffc200;
+  background: #0086b3;
   display: inline-block;
   padding: 0px 20px;
   border-radius: 3px;
@@ -166,7 +166,7 @@
 .flavorBox .flavor .cont .items .delFlavor {
   display: inline-block;
   padding: 0 10px;
-  color: #f19c59;
+  color: #0086b3;
   cursor: pointer;
 }
 
