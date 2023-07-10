@@ -2,8 +2,6 @@ package com.rain.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
@@ -27,12 +25,12 @@ public class SwaggerConfig {
      * apiInfo() 增加API相关信息
      * 通过select()函数返回一个ApiSelectorBuilder实例,用来控制哪些接口暴露给Swagger来展现，
      * 指定扫描的包路径来定义指定要建立API的目录。
-     * @return
+     * @return Swagger的文档对象
      */
 
     /*
     * 因为Springfox使用的路径匹配是基于AntPathMatcher的，而Spring Boot 2.6.X使用的是PathPatternMatcher。
-    * 需要配置：为基于antpathMatcher*/
+    * 需要配置：为基于antipathyMatcher*/
     @Bean
     public Docket docket() {
         //swagger的实例是docket，所以需要创建docket

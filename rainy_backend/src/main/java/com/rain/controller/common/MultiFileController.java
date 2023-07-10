@@ -1,7 +1,8 @@
 package com.rain.controller.common;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
-
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -15,12 +16,12 @@ import java.io.IOException;
  */
 @RestController
 @RequestMapping("/common")
-public class MutilFileController {
+public class MultiFileController {
     //像浏览器页面写图片数据
     @GetMapping("/download")
-    public void downLoad(@RequestParam String name, HttpServletResponse response) throws IOException {
+    public void downLoad(@RequestParam  String name, HttpServletResponse response) throws IOException {
         //构造输入流
-        FileInputStream ins=new FileInputStream(new File("D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\png\\"+name));
+        FileInputStream ins=new FileInputStream(new File("D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\png\\"+name+".png"));
         //构造输出流
         ServletOutputStream ous=response.getOutputStream();
         response.setContentType("image/jpeg");

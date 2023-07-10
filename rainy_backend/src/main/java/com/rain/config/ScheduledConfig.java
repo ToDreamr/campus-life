@@ -16,6 +16,7 @@ import java.util.Date;
 @Slf4j
 public class ScheduledConfig {
 
+    //定时器设置
     @Scheduled(cron = "30 10 * * * ?")
     public void showTime(){
         SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");

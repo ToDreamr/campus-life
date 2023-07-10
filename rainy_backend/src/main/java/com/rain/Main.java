@@ -20,7 +20,7 @@ public class Main {
 
     class A implements Runnable{
 
-        private PrintABC printABC;
+        private final PrintABC printABC;
         public A(PrintABC printABC){
             super();
             this.printABC=printABC;
@@ -33,7 +33,7 @@ public class Main {
     }
     class B implements Runnable{
 
-        private PrintABC printABC;
+        private final PrintABC printABC;
         public B(PrintABC printABC){
             super();
             this.printABC=printABC;
@@ -47,7 +47,7 @@ public class Main {
     }
     class C implements Runnable{
 
-        private PrintABC printABC;
+        private final PrintABC printABC;
         public C(PrintABC printABC){
             super();
             this.printABC=printABC;
@@ -62,7 +62,7 @@ public class Main {
     class PrintABC{
         private  final Lock lock=new ReentrantLock();
         private int  num;//当前线程号码数
-        private int loop;
+        private final int loop;
         public PrintABC(int num,int loop){
             super();
             this.num=num;

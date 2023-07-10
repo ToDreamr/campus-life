@@ -72,7 +72,7 @@ public class RainyShopEmployeeServiceImpl extends ServiceImpl<RainyShopEmployeeM
     @Override
     public RainyShopEmployee getById(int id) {
         //不应该返回密码信息
-        return employeeMapper.selectById(id);
+        return employeeMapper.getByIdRainyShopEmployee(id);
     }
 
     @Override

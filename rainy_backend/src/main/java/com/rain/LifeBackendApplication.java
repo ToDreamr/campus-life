@@ -1,6 +1,5 @@
 package com.rain;
 
-import com.rain.entity.common.CurrentUser;
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -9,8 +8,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
-import java.util.UUID;
 
 @Slf4j
 @SpringBootApplication

@@ -1,5 +1,7 @@
 package com.rain.controller.shop;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.rain.entity.common.Result;
 import com.rain.entity.pojo.shop.RainyShopEmployee;
@@ -9,6 +11,7 @@ import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 
@@ -60,7 +63,11 @@ public class EmployeeController {
 
     @GetMapping("/key")
     public Result<List<RainyShopEmployee>> queryByKeyWords(@RequestParam String keyWords){
+        //参数需要反序列化
         System.out.println(keyWords);
+        String str=java.net.URLDecoder.decode(keyWords,StandardCharsets.UTF_8);
+        JSONObject jsonObject = JSONObject.parseObject(str);
+
         return Result.success("查询成功",employeeService.queryByName(keyWords));
     }
 }

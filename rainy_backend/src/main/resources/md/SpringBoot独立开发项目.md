@@ -34,27 +34,30 @@
 
 分析 ：
 
-商家分类表:shop_classify，商家员工表:shop_employee，商家商品表shop_goods ，商店商品评论表shop_goods_comments,商店表：shop_info,订单表shop_orders
+>商家分类表:shop_classify，商家员工表:shop_employee，商家商品表shop_goods ，商店商品评论表shop_goods_comments,商店表：shop_info,订单表shop_orders
 
-用户表：基础用户表user,历史下单表user_history_orders,评论表user_comments，基础信息表user_info
+>用户表：基础用户表user,历史下单表user_history_orders,评论表user_comments，基础信息表user_info
 
 #### 初步设计字段：
-
-| 数据库字段设计                                                                                                                               |  |  |
-| :------------------------------------------------------------------------------------------------------------------------------------------- | - | - |
-| shop_orders表:id，order_time，user_address,user_phone,all_money,user_id,goods_name                                                           |  |  |
-| shop_info表:shop_name,shop_rank（店铺排名）,shop_type（店铺主营业务）,shop_img,shop_address（店铺地址）,shop_phone,id，update_time(开店时间) |  |  |
-| shop_classify表:shop_type（店铺主营业务）,id                                                                                                 |  |  |
-| shop_employee表:employee_name,id,username(唯一),password,isdroped(是否解雇？0是，1否),phone,email,gender                                     |  |  |
-| shop_goods表：id,goods_name,goods_price,goods_image,goods_description,goods_isdroped(是否上架？0是，1否)                                     |  |  |
-| shop_good_comment表:id，user_id（评论人的）id）,content,comment_time,isdeleted(是否删除评论？yes:1,not:0)                                    |  |  |
-| user表:id,username,password,email,nick_name,user_role(1为管理员admin),user_id                                                                |  |  |
-| user_history_orders表:id,user_id,goods_name,all_money                                                                                        |  |  |
-| userinfo表：signature(签名)，user_id，gender,user_phone，id                                                                                  |  |  |
-|                                                                                                                                              |  |  |
-
+>
+>| 数据库字段设计                                                                                                                              
+>| shop_orders表:id，order_time，user_address,user_phone,all_money,user_id,goods_name                                                          
+>| shop_info表:shop_name,shop_rank（店铺排名）,shop_type（店铺主营业务）,shop_img,shop_address（店铺地址）,shop_phone,id，update_time(开店时间)
+>| shop_classify表:shop_type（店铺主营业务）,id                                                                                                 
+>| shop_employee表:employee_name,id,username(唯一),password,isdroped(是否解雇？0是，1否),phone,email,gender                                  
+>| shop_goods表：id,goods_name,goods_price,goods_image,goods_description,goods_isdroped(是否上架？0是，1否)                                 
+>| shop_good_comment表:id，user_id（评论人的）id）,content,comment_time,isdeleted(是否删除评论？yes:1,not:0)                                    
+>| user表:id,username,password,email,nick_name,user_role(1为管理员admin),user_id                                                       
+>| user_history_orders表:id,user_id,goods_name,all_money                                                                           
+>| userinfo表：signature(签名)，user_id，gender,user_phone，id                                                                           
+>|                                                                                                                                
+>
 #### 降低耦合度，明确分工Service和Mapper
 ###项目亮点：
 调用逻辑关系：控制层调用Service,
 Service通过统一公共方法ValidService来调用Mapper层面，降低了耦合度
 和重复性代码的编写
+
+> 远程调用:Remote Procedure Call（RPC）
+> 远程过程调用，通过连接对方服务器来时线请求和响应
+> 交互，这样的按照Http请求协议或其他协议来实现调用，这样的东西叫做远程调用

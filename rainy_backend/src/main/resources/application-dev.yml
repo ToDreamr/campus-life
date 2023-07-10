@@ -20,7 +20,17 @@ logging:
   level:
     root: info
     com.rain.entity: error
-
+  file:
+# when there are both name and path,name is the first（name优先级高于path）
+#日志文档归类：
+    name: D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\log\\rainy_backend.log
+    path:
+  logback:
+    rollingpolicy:
+      file-name-pattern: ${LOG_FILE}.%d{yyyy-MM-dd}.%i
+      max-file-size: 1MB
+      max-history: 2
+      total-size-cap: 10MB
 mybatis-plus:
   global-config:
     db-config:

@@ -27,10 +27,12 @@ public class FileUploadServiceImpl implements FileUploadService {
             while (inputStream.read(bytes)!=-1){
                 outputStream.write(bytes);
             }
+            outputStream.close();
+            inputStream.close();
             return Result.success("上传成功");
-           }catch (IOException e){
-               e.printStackTrace();
-               return Result.errorMsg("上传失败");
+           }catch (IOException e) {
+           e.printStackTrace();
+           return Result.errorMsg("上传失败");
        }
     }
 }

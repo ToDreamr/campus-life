@@ -17,7 +17,7 @@ public class RedisController {
 
     @GetMapping("/get")
     public Result<String> count(){
-        stringRedisTemplate.opsForValue().set("Xiaoyu","B", 10,TimeUnit.SECONDS);
-        return Result.success("获取redis的值",stringRedisTemplate.opsForValue().get("Xiaoyu"));
+        stringRedisTemplate.opsForValue().set("Xiaojun","B", 10,TimeUnit.SECONDS);
+        return Result.success("获取redis的值",stringRedisTemplate.opsForValue().get("Xiaojun"));
     }
 }

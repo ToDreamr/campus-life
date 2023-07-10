@@ -8,11 +8,11 @@
         <version>2.7.10</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.rain</groupId>
-    <artifactId>life_backend</artifactId>
+    <groupId>net.rain</groupId>
+    <artifactId>rainy_backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>life_backend</name>
-    <description>life_backend</description>
+    <name>rainy_backend</name>
+    <description>rainy_backend</description>
     <properties>
         <java.version>8</java.version>
     </properties>
@@ -108,6 +108,14 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>10</source>
+                    <target>10</target>
                 </configuration>
             </plugin>
         </plugins>
