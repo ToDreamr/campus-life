@@ -1,0 +1,701 @@
+09:36:08  INFO 17500 --- [main] LifeBackendApplication          : Starting LifeBackendApplication using Java 18.0.2 on LAPTOP-I3GJPBVT with PID 17500 (D:\JavaWork\school_life\rainy_backend\target\classes started by Rainy-Heights in D:\JavaWork\school_life\rainy_backend)
+09:36:08  INFO 17500 --- [main] LifeBackendApplication          : The following 1 profile is active: "prod"
+09:36:09  INFO 17500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+09:36:09  INFO 17500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+09:36:09  INFO 17500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+09:36:09  INFO 17500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8900 (http)
+09:36:09  INFO 17500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:36:09  INFO 17500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+09:36:09  INFO 17500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:36:09  INFO 17500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1603 ms
+09:36:10  INFO 17500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8900 (http) with context path ''
+09:36:10  INFO 17500 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+09:36:10  INFO 17500 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:36:10  INFO 17500 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.lang.String>) -> ModelContext{groupName=商家, type=Result<java.lang.String>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.lang.String>) -> ModelContext{groupName=商家, type=Result<java.lang.String>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopAppeal>) -> ModelContext{groupName=商家, type=Result<RainyShopAppeal>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopAppeal) -> ModelContext{groupName=商家, type=RainyShopAppeal, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopAppeal>) -> ModelContext{groupName=商家, type=Result<RainyShopAppeal>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopAppeal) -> ModelContext{groupName=商家, type=RainyShopAppeal, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopAppeal>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopAppeal>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopAppeal) -> ModelContext{groupName=商家, type=RainyShopAppeal, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopAppeal>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopAppeal>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopAppeal>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopAppeal>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopAppeal>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopAppeal>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopAppeal) -> ModelContext{groupName=商家, type=RainyShopAppeal, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(R) -> ModelContext{groupName=商家, type=R, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(R) -> ModelContext{groupName=商家, type=R, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyUser>) -> ModelContext{groupName=商家, type=Result<RainyUser>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyUser) -> ModelContext{groupName=商家, type=RainyUser, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyUser>) -> ModelContext{groupName=商家, type=Result<RainyUser>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyUser) -> ModelContext{groupName=商家, type=RainyUser, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyUser) -> ModelContext{groupName=商家, type=RainyUser, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyUser) -> ModelContext{groupName=商家, type=RainyUser, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{groupName=商家, type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{groupName=商家, type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.util.List<RainyShopClassify>>) -> ModelContext{groupName=商家, type=Result<java.util.List<RainyShopClassify>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<RainyShopClassify>) -> ModelContext{groupName=商家, type=java.util.List<RainyShopClassify>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.util.List<RainyShopClassify>>) -> ModelContext{groupName=商家, type=Result<java.util.List<RainyShopClassify>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopClassify>) -> ModelContext{groupName=商家, type=Result<RainyShopClassify>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopClassify>) -> ModelContext{groupName=商家, type=Result<RainyShopClassify>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopClassify>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopClassify>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopClassify>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopClassify>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopClassify>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopClassify>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopClassify>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopClassify>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopClassify) -> ModelContext{groupName=商家, type=RainyShopClassify, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.util.List<RainyShopGoodComment>>) -> ModelContext{groupName=商家, type=Result<java.util.List<RainyShopGoodComment>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoodComment) -> ModelContext{groupName=商家, type=RainyShopGoodComment, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<RainyShopGoodComment>) -> ModelContext{groupName=商家, type=java.util.List<RainyShopGoodComment>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.util.List<RainyShopGoodComment>>) -> ModelContext{groupName=商家, type=Result<java.util.List<RainyShopGoodComment>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoodComment) -> ModelContext{groupName=商家, type=RainyShopGoodComment, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoodComment) -> ModelContext{groupName=商家, type=RainyShopGoodComment, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoodComment) -> ModelContext{groupName=商家, type=RainyShopGoodComment, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopGoodComment>) -> ModelContext{groupName=商家, type=Result<RainyShopGoodComment>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoodComment) -> ModelContext{groupName=商家, type=RainyShopGoodComment, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopGoodComment>) -> ModelContext{groupName=商家, type=Result<RainyShopGoodComment>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoodComment) -> ModelContext{groupName=商家, type=RainyShopGoodComment, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoodComment) -> ModelContext{groupName=商家, type=RainyShopGoodComment, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.util.List<RainyShopEmployee>>) -> ModelContext{groupName=商家, type=Result<java.util.List<RainyShopEmployee>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<RainyShopEmployee>) -> ModelContext{groupName=商家, type=java.util.List<RainyShopEmployee>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.util.List<RainyShopEmployee>>) -> ModelContext{groupName=商家, type=Result<java.util.List<RainyShopEmployee>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopEmployee>) -> ModelContext{groupName=商家, type=Result<RainyShopEmployee>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopEmployee>) -> ModelContext{groupName=商家, type=Result<RainyShopEmployee>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopEmployee>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopEmployee>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopEmployee>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopEmployee>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopEmployee>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopEmployee>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopEmployee>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopEmployee>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  INFO 17500 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageEmployeeUsingGET_1
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopEmployee) -> ModelContext{groupName=商家, type=RainyShopEmployee, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.util.List<RainyShopGoods>>) -> ModelContext{groupName=商家, type=Result<java.util.List<RainyShopGoods>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<RainyShopGoods>) -> ModelContext{groupName=商家, type=java.util.List<RainyShopGoods>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<java.util.List<RainyShopGoods>>) -> ModelContext{groupName=商家, type=Result<java.util.List<RainyShopGoods>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopGoods>) -> ModelContext{groupName=商家, type=Result<RainyShopGoods>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<RainyShopGoods>) -> ModelContext{groupName=商家, type=Result<RainyShopGoods>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=false}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getDeserializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopGoods>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopGoods>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopGoods>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopGoods>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopGoods>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopGoods>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopGoods>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyShopGoods>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyShopGoods) -> ModelContext{groupName=商家, type=RainyShopGoods, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  INFO 17500 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryByKeyWordsUsingGET_1
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyUserHistoryOrders>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyUserHistoryOrders>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyUserHistoryOrders) -> ModelContext{groupName=商家, type=RainyUserHistoryOrders, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyUserHistoryOrders>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyUserHistoryOrders>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyUserHistoryOrders>>) -> ModelContext{groupName=商家, type=Result<com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyUserHistoryOrders>>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyUserHistoryOrders>) -> ModelContext{groupName=商家, type=com.baomidou.mybatisplus.extension.plugins.pagination.Page<RainyUserHistoryOrders>, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:10  WARN 17500 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(RainyUserHistoryOrders) -> ModelContext{groupName=商家, type=RainyUserHistoryOrders, isReturnType=true}. java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.ObjectMapper.getSerializationConfig()" because "this.objectMapper" is null
+09:36:11  INFO 17500 --- [main] LifeBackendApplication          : Started LifeBackendApplication in 3.05 seconds (JVM running for 3.785)
+09:36:11  INFO 17500 --- [main] LifeBackendApplication          : 进入项目在：http://localhost:8900/page/login/login.html
+09:36:11  INFO 17500 --- [main] LifeBackendApplication          : 项目api文档在：http://localhost:8900/swagger-ui.html#/
+09:36:20  INFO 17500 --- [http-nio-8900-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_a1ff8825baa73c3a78eb96aa40325abc=1682516445,1682593608;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+09:36:20  INFO 17500 --- [http-nio-8900-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:36:20  INFO 17500 --- [http-nio-8900-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:36:20  INFO 17500 --- [http-nio-8900-exec-1] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09:36:20  INFO 17500 --- [http-nio-8900-exec-1] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+09:36:20  INFO 17500 --- [http-nio-8900-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 251 ms
+09:36:29  WARN 17500 --- [http-nio-8900-exec-9] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6b81ce95
+09:36:30  INFO 17500 --- [http-nio-8900-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:36:52 ERROR 17500 --- [http-nio-8900-exec-9] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.10.jar:3.5.10]
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy144.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.10.jar:3.5.10]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy98.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy140.selectList(Unknown Source) ~[na:na]
+	at com.rain.service.impl.UserServiceImpl.login(UserServiceImpl.java:30) ~[classes/:na]
+	at com.rain.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$8c08f642.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.26.jar:5.3.26]
+	at com.rain.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$50435ecd.login(<generated>) ~[classes/:na]
+	at AuthController.login(AuthController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:528) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	... 93 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	... 96 common frames omitted
+
+09:36:52 ERROR 17500 --- [http-nio-8900-exec-9] c.r.e.e.ExceptionControllerAdvice        : 运行时异常:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/rain/mapper/user/RainyUserMapper.java (best guess)
+### The error may involve RainyUserMapper.selectList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+09:37:28  INFO 17500 --- [http-nio-8900-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:37:50 ERROR 17500 --- [http-nio-8900-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.10.jar:3.5.10]
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy144.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.10.jar:3.5.10]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy98.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:89) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy146.selectCount(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.26.jar:5.3.26]
+	at jdk.proxy2/jdk.proxy2.$Proxy147.selectCount(Unknown Source) ~[na:na]
+	at com.baomidou.mybatisplus.extension.service.IService.count(IService.java:361) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.extension.service.IService.count(IService.java:352) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.26.jar:5.3.26]
+	at RainyShopEmployeeServiceImpl$$EnhancerBySpringCGLIB$$fd21e343.count(<generated>) ~[classes/:na]
+	at EmployeeController.pageEmployee(EmployeeController.java:58) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	... 103 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	... 106 common frames omitted
+
+09:37:50  INFO 17500 --- [http-nio-8900-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:37:50 ERROR 17500 --- [http-nio-8900-exec-1] c.r.e.e.ExceptionControllerAdvice        : 运行时异常:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/rain/mapper/shop/RainyShopEmployeeMapper.java (best guess)
+### The error may involve RainyShopEmployeeMapper.selectCount
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+09:38:12 ERROR 17500 --- [http-nio-8900-exec-10] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.10.jar:3.5.10]
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy144.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.10.jar:3.5.10]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy98.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:89) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy146.selectCount(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.26.jar:5.3.26]
+	at jdk.proxy2/jdk.proxy2.$Proxy147.selectCount(Unknown Source) ~[na:na]
+	at com.baomidou.mybatisplus.extension.service.IService.count(IService.java:361) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.extension.service.IService.count(IService.java:352) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.26.jar:5.3.26]
+	at RainyShopEmployeeServiceImpl$$EnhancerBySpringCGLIB$$fd21e343.count(<generated>) ~[classes/:na]
+	at EmployeeController.pageEmployee(EmployeeController.java:58) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	... 103 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	... 106 common frames omitted
+
+09:38:12  INFO 17500 --- [http-nio-8900-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:38:12 ERROR 17500 --- [http-nio-8900-exec-10] c.r.e.e.ExceptionControllerAdvice        : 运行时异常:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/rain/mapper/shop/RainyShopEmployeeMapper.java (best guess)
+### The error may involve RainyShopEmployeeMapper.selectCount
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+09:38:34 ERROR 17500 --- [http-nio-8900-exec-8] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.10.jar:3.5.10]
+	at com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor.willDoQuery(PaginationInnerInterceptor.java:135) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:75) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy144.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.10.jar:3.5.10]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy98.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:121) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:85) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy159.selectPage(Unknown Source) ~[na:na]
+	at com.rain.service.impl.RainyUserHistoryOrdersServiceImpl.getHistoryOrdersPage(RainyUserHistoryOrdersServiceImpl.java:25) ~[classes/:na]
+	at com.rain.service.impl.RainyUserHistoryOrdersServiceImpl$$FastClassBySpringCGLIB$$6d868ba4.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.26.jar:5.3.26]
+	at com.rain.service.impl.RainyUserHistoryOrdersServiceImpl$$EnhancerBySpringCGLIB$$52eb8c33.getHistoryOrdersPage(<generated>) ~[classes/:na]
+	at HistoryOrderController.getHistoryOrdersPAge(HistoryOrderController.java:28) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	... 94 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	... 97 common frames omitted
+
+09:38:34  INFO 17500 --- [http-nio-8900-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:38:34 ERROR 17500 --- [http-nio-8900-exec-8] c.r.e.e.ExceptionControllerAdvice        : 运行时异常:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/rain/mapper/user/RainyUserHistoryOrdersMapper.java (best guess)
+### The error may involve RainyUserHistoryOrdersMapper.selectPage_mpCount
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

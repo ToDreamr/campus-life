@@ -1,1 +1,44 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url:  jdbc:mysql://192.168.137.89:3306/school_life?serverTimezone=UTC
+  main:
+    banner-mode: off
+    lazy-initialization: true
+  #  mvc:
+  #    static-path-pattern: /static/**
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  redis:
+    port: 6379
+    host: 192.168.137.89
+logging:
+  pattern:
+    dateformat: HH:mm:ss
+  level:
+    root: info
+    com.rain.entity: error
+  file:
+    # when there are both name and path,name is the first（name优先级高于path）
+    #日志文档归类：
+    name: rainy_backend.log
+    path:
+  logback:
+    rollingpolicy:
+      file-name-pattern: ${LOG_FILE}.%d{yyyy-MM-dd}.%i
+      max-file-size: 1MB
+      max-history: 2
+      total-size-cap: 10MB
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8081
+
+
 

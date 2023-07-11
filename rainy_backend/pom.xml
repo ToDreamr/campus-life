@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>rainy_backend</name>
     <description>rainy_backend</description>
+
     <properties>
         <java.version>8</java.version>
     </properties>
@@ -88,11 +89,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+        <!--jebrains家族自带注解内容-->
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>swagger-ui</artifactId>
+            <version>4.17.1</version>
+        </dependency>
+        <!--响应式编程-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
     </dependencies>
 
