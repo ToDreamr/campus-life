@@ -13,13 +13,10 @@ function logoutApi(){
   })
 }
 
-function changeBack(data){
-  let name=4
+const changeBack=(params)=>{
   return $axios({
-    'url':'/common/download',
+    'url':`/common/download/${params}`,
     method:'post',
-    data: {
-      name
-    }
+    params
   })
 }

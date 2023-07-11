@@ -27,6 +27,10 @@ import javax.servlet.http.HttpServletResponse;
 public class AuthController {
     @Resource
     UserService userService;
+    @PostMapping("/sign")
+    public Result<RainyUser> sign(@RequestBody RainyUser user,HttpServletResponse response){
+        return Result.success("注册成功", userService.sign(user));
+    }
     @PostMapping("/login")
     //注意必须是Integer，因为int无法进行非null判断！
     //这里封装的对象是实体，需要用@RequestBody

@@ -46,4 +46,19 @@ public class UserServiceImpl extends ServiceImpl<RainyUserMapper, RainyUser> imp
     public RainyUser getUser(int id) {
         return userMapper.selectById(id);
     }
+
+    @Override
+    public RainyUser sign(RainyUser rainyUser) {
+        LambdaQueryWrapper<RainyUser> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(RainyUser::getId,rainyUser.getId());
+        List<RainyUser> historyUser = userMapper.selectList(queryWrapper);
+
+        if (!historyUser.isEmpty()){
+            throw new UserLoginException("该用户已存在，无需继续注册");
+        }else {
+            userMapper.insert(rainyUser);
+            System.out.println(rainyUser);
+        }
+        return userMapper.selectById(rainyUser.getId());
+    }
 }

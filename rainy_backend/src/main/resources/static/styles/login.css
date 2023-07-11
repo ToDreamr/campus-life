@@ -3,8 +3,13 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+  background-size:cover;
+  position:absolute;
+  left:0;
+  top:0;
   /*¸ü¸Ä±³¾°*/
-  background: #333 url("../images/img.png") repeat;
+  background: #333 url("../images/4.png") center center no-repeat ;
 }
 .login-box {
   width: 1000px;
@@ -25,8 +30,8 @@
 }
 .login-form {
   background: #ffffff;
-  width: 40%;
-  border-radius: 0px 8px 8px 0px;
+  width: 100%;
+  border-radius: 0px 17px 17px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +61,7 @@
   font-weight: 400;
   color: #333333;
   height: 32px;
+  width: 100%;
   line-height: 32px;
 }
 .login-form .el-input__prefix {
@@ -76,16 +82,16 @@
 .login-btn {
   border-radius: 17px;
   padding: 11px 20px !important;
-  margin-top: 10px;
+  margin-top: 0;
   font-weight: 500;
   font-size: 14px;
   border: 0;
-  background-color: #0086b3;
+  background-color: #8cc5ff;
 }
 .login-btn:hover,
 .login-btn:focus {
-  /* background: #FFC200; */
-  /* color: #ffffff; */
+   background: #bd2c00;
+   color: #ffffff;
 }
 .login-form-title {
   height: 36px;

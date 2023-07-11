@@ -1,11 +1,9 @@
 package net.rain.controller.common;
 
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
@@ -28,6 +26,24 @@ public class MultiFileController {
     public void downLoad(@RequestParam  String name, HttpServletResponse response) throws IOException {
         //构造输入流
         FileInputStream ins=new FileInputStream(new File("D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\png\\"+name+".png"));
+        //构造输出流
+        ServletOutputStream ous=response.getOutputStream();
+        response.setContentType("image/jpeg");
+        byte[]bytes=new byte[ins.available()];
+        while ( ins.read(bytes) !=-1){
+            ous.write(bytes);
+            ous.flush();
+        }
+        ins.close();
+        ous.close();
+    }
+
+    @PostMapping ("/download")
+    @ApiOperation(value = "下载图片到客户端")
+    public void Name(@RequestBody String name, HttpServletResponse response) throws IOException {
+        JSONObject jsonObject = JSONObject.parseObject(name);
+        //构造输入流
+        FileInputStream ins=new FileInputStream(new File("D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\png\\"+jsonObject.get("name")+".png"));
         //构造输出流
         ServletOutputStream ous=response.getOutputStream();
         response.setContentType("image/jpeg");

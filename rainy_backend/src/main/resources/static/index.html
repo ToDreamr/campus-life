@@ -35,7 +35,9 @@
             <!-- <img src="images/logo.png" width="122.5" alt="" /> -->
             <!--修改右上角图片-->
             <!--添加点击事件-->
-            <img src="images/login/anniLogin.jpg" onclick="changeBack('4')"  alt="" style="width: 117px; height: 132px" />
+            <template>
+              <img src="images/login/anniLogin.jpg" @click="changeBack('4')" onclick="changeBack('4')"  alt="" style="width: 117px; height: 132px" />
+            </template>
           </div>
 
           <el-scrollbar wrap-class="scrollbar-wrapper">
@@ -219,6 +221,9 @@
             this.timer = setTimeout(()=>{
               this.loading = false
             },1000)
+          },
+          changeBack(params){
+            console.log(params)
           }
         }
       })

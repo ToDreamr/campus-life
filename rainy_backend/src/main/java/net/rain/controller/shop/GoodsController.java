@@ -69,7 +69,11 @@ public class GoodsController {
     @ApiOperation(value = "根据id查询商品上架状态")
     public Result<RainyShopGoods> modifyStatus(@PathVariable int id){
         RainyShopGoods goods = goodsService.getById(id);
-        goods.setGoodsIsdroped(1);
+        if (goods.getGoodsIsdroped() == 0) {
+            goods.setGoodsIsdroped(1);
+        } else {
+            goods.setGoodsIsdroped(0);
+        }
         goodsService.modifyGoods(goods);
         return Result.success("修改成功",goods);
     }

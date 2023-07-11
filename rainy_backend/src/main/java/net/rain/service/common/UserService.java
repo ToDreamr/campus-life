@@ -12,4 +12,6 @@ import net.rain.entity.pojo.user.RainyUser;
 public interface UserService extends IService<RainyUser> {
     RainyUser login(String username,String password,int id);
     RainyUser getUser(int id);
+
+    RainyUser sign(RainyUser rainyUser);
 }

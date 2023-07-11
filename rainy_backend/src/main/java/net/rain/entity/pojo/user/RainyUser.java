@@ -8,6 +8,8 @@ import java.io.Serializable;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
 
@@ -53,6 +55,11 @@ public class RainyUser implements Serializable {
     */
     @ApiModelProperty("角色")
     private Integer userRole;
+
+    @Setter
+    @Getter
+    @ApiModelProperty("邮箱")
+    private String email;
 
     /**
     * 

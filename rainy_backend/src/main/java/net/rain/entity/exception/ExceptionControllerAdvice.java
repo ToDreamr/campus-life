@@ -35,4 +35,10 @@ public class ExceptionControllerAdvice {
         log.error("运行时异常:"+exception.getMessage());
         return Result.error(exception.getMessage(), null);
     }
+
+    @ExceptionHandler(NumberFormatException.class)
+    public Result<String> formatException(NumberFormatException formatException){
+        log.error("数据转换异常："+formatException.getMessage());
+        return Result.error("数据转换异常",null);
+    }
 }

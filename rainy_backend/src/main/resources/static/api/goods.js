@@ -77,7 +77,7 @@ const dishStatusByStatus = (params) => {
   return $axios({
     url: `/shop/goods/status/${params.id}`,
     method: 'post',
-    params: { ids: params.id }
+    params: { id: params.id }
   })
 }
 
