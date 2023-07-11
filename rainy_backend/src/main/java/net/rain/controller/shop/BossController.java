@@ -1,8 +1,7 @@
 package net.rain.controller.shop;
 
-import net.rain.service.common.BossService;
-import net.rain.service.rpc.RemoteProcedureService;
 import io.swagger.annotations.Api;
+import net.rain.service.rpc.RemoteProcedureService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,10 +17,8 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("/shop/boss")
-@Api(tags = "BossController",description = "")
+@Api(tags = "Boss",description = "商家后台和RPC")
 public class BossController {
-    @Resource
-    private BossService bossService;
     //涉及到多个表单联合查询，需要考虑数据库设计！
 
     @Resource

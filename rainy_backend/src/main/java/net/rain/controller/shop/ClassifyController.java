@@ -21,7 +21,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/shop/classify")
-@Api(tags = "ClassifyController",description = "分类信息")
+@Api(tags = "Classify",description = "分类信息")
 public class ClassifyController {
     @Resource
     private RainyShopClassifyService shopClassifyService;

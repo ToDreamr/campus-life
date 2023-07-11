@@ -18,7 +18,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/shop/goods")
-@Api(tags = "GoodsController",description = "商品明细")
+@Api(tags = "Goods",description = "商品明细")
 public class GoodsController {
     @Autowired
     private RainyShopGoodsService goodsService;

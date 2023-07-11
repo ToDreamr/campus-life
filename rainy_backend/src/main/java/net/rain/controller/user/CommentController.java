@@ -1,5 +1,6 @@
 package net.rain.controller.user;
 
+import io.swagger.annotations.Api;
 import net.rain.entity.common.Result;
 import net.rain.entity.pojo.shop.RainyShopGoodComment;
 
@@ -18,6 +19,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/user")
+@Api(tags = "Comment",description = "评论")
 public class CommentController {
     @Resource
     RainyShopGoodCommentService commentService;

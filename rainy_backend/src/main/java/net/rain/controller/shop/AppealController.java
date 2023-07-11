@@ -16,7 +16,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("/shop/appeal")
-@Api(tags = "AppealController",description = "申诉管理")
+@Api(tags = "Appeal",description = "申诉管理")
 public class AppealController {
     @Resource
     private BossService bossService;

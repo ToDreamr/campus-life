@@ -1,7 +1,9 @@
 package net.rain.config;
 
+import org.assertj.core.api.BDDSoftAssertions;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
@@ -35,7 +37,9 @@ public class SwaggerConfig {
     public Docket docket() {
         //swagger的实例是docket，所以需要创建docket
         return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo()).groupName("商家");
+                .apiInfo(apiInfo()).groupName("商家")
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("net.rain.controller")).build();
 //                .enable(true)
 //                .pathMapping("/")
 //                .select()
@@ -53,7 +57,7 @@ public class SwaggerConfig {
                 "v1.0",
                 "https://www.yuque.com/chunjianghuazhaoqiuyueye",
                 contact,
-                "Apach 2.0 许可",
+                "Apache 2.0 许可",
                 "许可链接",
                 new ArrayList<>()
         );

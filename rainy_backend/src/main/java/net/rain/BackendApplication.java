@@ -11,14 +11,14 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Slf4j
 @SpringBootApplication
-@MapperScan("com.rain.mapper")
+@MapperScan("net.rain.mapper")
 @EnableScheduling
 @EnableAsync
 @EnableSwagger2
-public class LifeBackendApplication {
+public class BackendApplication {
 
     public static void main(String[] args) {
-        ApplicationContext context=SpringApplication.run(LifeBackendApplication.class, args);
+        ApplicationContext context=SpringApplication.run(BackendApplication.class, args);
 //        CurrentUser.setCurrentId(Math.abs(UUID.randomUUID().getLeastSignificantBits()%20000));
         //随机根据当前时间戳生成线程ID
 //        log.info("本地随机生成线程ID:{}",CurrentUser.getCurrentId());

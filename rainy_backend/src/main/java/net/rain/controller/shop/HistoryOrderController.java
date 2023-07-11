@@ -18,7 +18,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("/shop/history")
-@Api(tags = "HistoryOrderController",description = "")
+@Api(tags = "HistoryOrder",description = "历史订单明细")
 public class HistoryOrderController {
     @Resource
     private RainyUserHistoryOrdersService userHistoryOrdersService;

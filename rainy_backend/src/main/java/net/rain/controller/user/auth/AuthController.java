@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/auth")
 @RestController
 @Slf4j
-@Api(tags = "AuthController",description = "登录注册")
+@Api(tags = "UserAuth",description = "登录注册")
 public class AuthController {
     @Resource
     UserService userService;

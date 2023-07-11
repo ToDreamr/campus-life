@@ -20,7 +20,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/shop/employee")
-@Api(tags = "EmployeeController",description = "员工控制")
+@Api(tags = "Employee",description = "员工控制")
 public class EmployeeController {
     @Autowired
     private RainyShopEmployeeService employeeService;

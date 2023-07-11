@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 import java.io.IOException;
 
 @SpringBootTest
-class LifeBackendApplicationTests {
+class BackendApplicationTests {
     @Resource
     FileUploadService uploadService;
     @Resource

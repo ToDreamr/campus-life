@@ -1,5 +1,6 @@
 package net.rain.controller.user.file;
 
+import io.swagger.annotations.Api;
 import net.rain.entity.common.Result;
 import net.rain.service.common.FileUploadService;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import java.io.IOException;
  */
 @RestController
 @RequestMapping("/user/file")
+@Api(tags = "File",description = "文件上传")
 public class FileUploadController {
     @Resource
     FileUploadService uploadService;

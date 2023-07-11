@@ -1,5 +1,6 @@
 package net.rain.controller.common;
 
+import io.swagger.annotations.Api;
 import net.rain.entity.common.Result;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/redis")
+@Api(tags = "Redis",description = "redis测试")
 public class RedisController {
     @Resource
     private StringRedisTemplate stringRedisTemplate;
