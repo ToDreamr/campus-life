@@ -63,9 +63,8 @@ public class EmployeeController {
     public Result<List<RainyShopEmployee>> queryByKeyWords(@RequestParam String keyWords){
         //参数需要反序列化
         System.out.println(keyWords);
-        String str=java.net.URLDecoder.decode(keyWords,StandardCharsets.UTF_8);
-        JSONObject jsonObject = JSONObject.parseObject(str);
-
+//        String str=java.net.URLDecoder.decode(keyWords,StandardCharsets.UTF_8);
+//        JSONObject jsonObject = JSONObject.parseObject(str);
         return Result.success("查询成功",employeeService.queryByName(keyWords));
     }
 }

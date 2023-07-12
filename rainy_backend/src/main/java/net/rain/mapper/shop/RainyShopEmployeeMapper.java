@@ -20,7 +20,7 @@ public interface RainyShopEmployeeMapper extends BaseMapper<RainyShopEmployee> {
     List<RainyShopEmployee> queryByName(String keyWords);
     @Select("select id,employee_name,username,0 AS isdroped,phone,email,gender " +
             "FROM school_life.rainy_shop_employee LIMIT #{page},#{pageSize} ")
-   List<RainyShopEmployee> classifyPage(@Param("page") int page, @Param("pageSize") int pageSize);
+    List<RainyShopEmployee> classifyPage(@Param("page") int page, @Param("pageSize") int pageSize);
 
     @Select("select id,employee_name,username,isdroped,email,gender from school_life.rainy_shop_employee where id=#{id}")
     RainyShopEmployee getByIdRainyShopEmployee(int id);

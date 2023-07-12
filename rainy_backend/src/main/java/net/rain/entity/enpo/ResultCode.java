@@ -1,5 +1,5 @@
 package net.rain.entity.enpo;
-import lombok.AllArgsConstructor;
+
 import lombok.Getter;
 
 @Getter

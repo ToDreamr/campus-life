@@ -23,19 +23,19 @@ public class Result<T> {
 
     /**
      * //返回信息参数
-     * @param message
-     * @param data
-     * @param <T>
-     * @return
+     * @param message 返回信息
+     * @param data  数据体
+     * @param <T>  参数
+     * @return  泛型T
      */
      public static <T> Result<T> success(String message,T data){
          return new Result<>(200,message,data);
      }
     /**
      * 返回错误信息
-     * @param message
-     * @param <T>
-     * @return
+     * @param message  返回信息
+     * @param <T>  参数
+     * @return  泛型T
      */
      public static <T> Result<T> errorMsg(String message){
         return new Result<>(400,message,null);
@@ -47,9 +47,9 @@ public class Result<T> {
 
     /**
      * 只返回数据信息
-     * @param data
-     * @param <T>
-     * @return
+     * @param data  数据体
+     * @param <T> 参数
+     * @return 泛型T
      */
      public static <T> Result<T> success(T data){
         Result result=new Result();

@@ -86,11 +86,22 @@
             <el-button v-if="actionType === 'add'" type="primary" @click="submitForm('ruleForm', false)">
               保存
             </el-button>
+            <el-button v-if="actionType !== 'add'" type="primary" @click="submitForm('ruleForm', false)">
+              保存
+            </el-button>
             <el-button
               v-if="actionType == 'add'"
               type="primary"
               class="continue"
               @click="submitForm('ruleForm', true)"
+            >
+              保存并继续添加
+            </el-button>
+            <el-button
+                    v-if="actionType !== 'add'"
+                    type="primary"
+                    class="continue"
+                    @click="submitForm('ruleForm', true)"
             >
               保存并继续添加
             </el-button>
