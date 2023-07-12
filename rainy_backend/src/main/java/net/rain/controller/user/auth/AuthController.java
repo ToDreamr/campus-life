@@ -45,6 +45,7 @@ public class AuthController {
             if (user!=null){
                 setCookie(response,user.getUsername(),String.valueOf(user.getId()),true);
                 CurrentUser.setCurrentId(user.getId());//设置当前用户
+                log.info("已存储当前用户ID{}",CurrentUser.getCurrentId());
                 return Result.success("登录成功",user);
             }
         }catch (UserLoginException e){
@@ -113,12 +114,12 @@ public class AuthController {
      */
     @PostMapping("/logout")
     public Result<String> logout(HttpServletResponse response){
+        return Result.success("退出成功",null);
         //清除session，cookie等信息
-        setCookie(response,userService.getUser(CurrentUser.getCurrentId()).getUsername(),
-                String.valueOf(userService.getUser(CurrentUser.getCurrentId()).getId()),false);
+        // setCookie(response,userService.getUser(CurrentUser.getCurrentId()).getUsername(),
+        // String.valueOf(userService.getUser(CurrentUser.getCurrentId()).getId()),false);
         //没有解决未登录时没有录入状态信息的bug：
         //Cannot invoke "java.lang.Long.longValue()" because the return value of "java.lang.ThreadLocal.get()" is null
-        return Result.success("退出成功");
     }
 
 }
