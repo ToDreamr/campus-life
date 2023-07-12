@@ -34,7 +34,7 @@ public class SwaggerConfig {
     * 因为Springfox使用的路径匹配是基于AntPathMatcher的，而Spring Boot 2.6.X使用的是PathPatternMatcher。
     * 需要配置：为基于antipathyMatcher*/
     @Bean
-    public Docket docket() {
+    public Docket docketBoss() {
         //swagger的实例是docket，所以需要创建docket
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo()).groupName("商家")
@@ -48,6 +48,20 @@ public class SwaggerConfig {
 //                .build().groupName("商家");
     }
 
+    @Bean
+    public Docket docketStudent() {
+        //swagger的实例是docket，所以需要创建docket
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(apiInfo()).groupName("客户")
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("net.rain.controller")).build();
+//                .enable(true)
+//                .pathMapping("/")
+//                .select()
+//                .apis(RequestHandlerSelectors.basePackage("com.rain.controller"))
+//                .paths(PathSelectors.ant("/shop/**"))
+//                .build().groupName("商家");
+    }
 
     private ApiInfo apiInfo() {
         Contact contact = new Contact("Rainy-Heights", "校园生活", "amixrip@163.com");
