@@ -62,3 +62,18 @@ Service通过统一公共方法ValidService来调用Mapper层面，降低了耦�
 > 远程调用:Remote Procedure Call（RPC）
 > 远程过程调用，通过连接对方服务器来时线请求和响应
 > 交互，这样的按照Http请求协议或其他协议来实现调用，这样的东西叫做远程调用
+
+# 捐赠
+
+开源项目不易，若此项目能得到你的青睐，可以捐赠支持作者持续开发与维护，感谢所有支持开源的朋友。
+
+<img src="rainy_backend/src/main/resources/md/vx.png" alt="img.png" style="zoom:25%;" /> <img src="rainy_backend/src/main/resources/md/zfb.png" alt="img_2.png" style="zoom:25%;" />
+![微信](rainy_backend/src/main/resources/md/vx.png)
+![支付宝](rainy_backend/src/main/resources/md/zfb.png)
+## 捐赠列表（有遗漏的请及时联系作者）
+|捐赠者|金额|留言|时间|
+|:---:|:---:|:---:|:---:|
+|春江花朝秋月夜|￥88.88 |请大佬喝咖啡|2023-05-28 15:53|
+
+
+
