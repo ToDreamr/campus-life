@@ -68,8 +68,7 @@ Service通过统一公共方法ValidService来调用Mapper层面，降低了耦�
 开源项目不易，若此项目能得到你的青睐，可以捐赠支持作者持续开发与维护，感谢所有支持开源的朋友。
 
 <img src="rainy_backend/src/main/resources/md/vx.png" alt="img.png" style="zoom:25%;" /> <img src="rainy_backend/src/main/resources/md/zfb.png" alt="img_2.png" style="zoom:25%;" />
-![微信](rainy_backend/src/main/resources/md/vx.png)
-![支付宝](rainy_backend/src/main/resources/md/zfb.png)
+
 ## 捐赠列表（有遗漏的请及时联系作者）
 |捐赠者|金额|留言|时间|
 |:---:|:---:|:---:|:---:|
