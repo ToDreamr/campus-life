@@ -3,6 +3,7 @@ package net.rain.controller.common;
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import net.rain.ResourceTest;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletOutputStream;
@@ -10,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 
 /**
  * @author Rainy-Heights
@@ -24,8 +27,13 @@ public class MultiFileController {
     @GetMapping("/download")
     @ApiOperation(value = "下载图片到客户端")
     public void downLoad(@RequestParam  String name, HttpServletResponse response) throws IOException {
+
         //构造输入流
-        FileInputStream ins=new FileInputStream(new File("D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\png\\"+name+".png"));
+        URL url = ResourceTest.class.getClassLoader().getResource("./png/"+name+".png");
+//        FileInputStream ins=new FileInputStream(new File(MultiFileController.class.getClassLoader().getResource("./png/"+name + ".png")+name+".png"));
+        //断言不为空
+        assert url != null;
+        InputStream ins = url.openStream();
         //构造输出流
         ServletOutputStream ous=response.getOutputStream();
         response.setContentType("image/jpeg");
@@ -42,8 +50,11 @@ public class MultiFileController {
     @ApiOperation(value = "下载图片到客户端")
     public void Name(@RequestBody String name, HttpServletResponse response) throws IOException {
         JSONObject jsonObject = JSONObject.parseObject(name);
+        URL url = ResourceTest.class.getClassLoader().getResource("./png/"+jsonObject.get("name")+".png");
         //构造输入流
-        FileInputStream ins=new FileInputStream(new File("D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\png\\"+jsonObject.get("name")+".png"));
+//        FileInputStream ins=new FileInputStream(new File("D:\\JavaWork\\school_life\\rainy_backend\\src\\main\\resources\\png\\"+jsonObject.get("name")+".png"));
+        assert url!=null;
+        InputStream ins = url.openStream();
         //构造输出流
         ServletOutputStream ous=response.getOutputStream();
         response.setContentType("image/jpeg");
